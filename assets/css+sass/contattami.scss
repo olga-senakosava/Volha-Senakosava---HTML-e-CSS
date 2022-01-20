@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import "_partials.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $beige;
+  font-family: "Poiret One", cursive;
+}
+
+.home-navigation {
+  animation: menuAppear 1s;
+
+}
+
+
+.contattami-section {
+  margin: 180px 0px 0px 0px;
+  animation: contattamiAppear 1.5s;
+
+  h2 {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  .contattami-div {
+    margin-top: 80px;
+
+    .email-div {
+      margin: 50px auto;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: $darkred;
+        font-size: 50px;
+        font-weight: bold;
+
+
+        &::after {
+          display: block;
+          content:"";
+          border-bottom: 2px solid $darkred;
+          transform: scaleX(0);
+
+          transition: transform 250ms ease-in-out;
+          transform-origin:  50% 0%;
+          padding-top: 5px;
+        }
+
+        &:hover {
+          border-color: $darkred;
+
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+
+
+
+      }
+    }
+
+    .social-div {
+      text-align: center;
+
+      ul {
+        li {
+          display: inline-block;
+          margin: 20px;
+
+          a {
+            text-decoration: none;
+
+            img {
+              width: 70px;
+              height: auto;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}

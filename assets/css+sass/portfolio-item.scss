@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import "_partials.scss";
+@import "media.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $beige;
+  font-family: "Poiret One", cursive;
+}
+
+.home-navigation {
+  animation: menuAppear 0.5s;
+}
+
+
+.portfolio-item-section {
+  margin: 170px 50px 50px 50px;
+
+  h2 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    animation: pItemTitleAppear 0.5s;
+  }
+
+  .olga-h2 {
+    letter-spacing: 0.07em;
+  }
+
+  .portfolio-item-div {
+    margin: 100px 0px;
+
+    .portfolio-item-intro {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin-bottom: 35px;
+
+
+      div {
+        margin-top: 0;
+
+        h3 {
+          font-weight: bold;
+          font-size: 50px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 30px;
+        }
+
+      }
+      .cose-div, .strumenti-div {
+        padding: 30px 50px;
+        border-left: 3px solid $darkred;
+
+      }
+
+      .cose-div {
+        animation: itemDivAppear 0.5s;
+      }
+
+      .strumenti-div {
+        animation: itemDivAppear 1s;
+      }
+
+      .portfolio-item-button {
+        animation: itemDivAppear 1.5s;
+
+        button {
+          border: none;
+          border-radius: 0%;
+          margin: 30px;
+
+
+
+          a {
+            text-decoration: none;
+            color: $beige;
+            background-color: $darkred;
+            background-position: left;
+            font-family: "Poiret One", cursive;
+            font-weight: bold;
+            font-size: 30px;
+            padding: 50px;
+            border: 5px solid transparent;
+            white-space: nowrap;
+            transition: all 0.3s;
+
+            &:hover {
+              background-image: url('../../assets/img/portfolio/gotoweb-darkred.svg');
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 140px;
+              background-color: $beige;
+              padding: 50px;
+              color: transparent;
+              border: 5px solid $darkred;
+              transition: all 0.3s;
+            }
+
+          }
+        }
+
+      }
+    }
+
+
+    .arrow-move {
+      background-image: url('../../assets/img/portfolio/arrow.svg');
+      background-size: 30px;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+
+    }
+
+    .arrow-move-1 {
+      animation: arrowMove 1s infinite;
+    }
+
+    .arrow-move-2 {
+      margin-top: -15px;
+      animation: arrowMove 1s infinite;
+      animation-delay: 0.1s;
+    }
+
+    .arrow-move-3 {
+      margin-top: -15px;
+      animation: arrowMove 1s infinite;
+      animation-delay: 0.2s;
+
+    }
+
+
+    .portfolio-item-description {
+      p {
+        font-size: 30px;
+        margin: 70px 50px;
+      }
+    }
+
+    .portfolio-item-screen {
+      border-top: 3px solid $darkred;
+      border-bottom: 3px solid $darkred;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 1.5px solid $darkred;
+        padding: 0;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import "_partials.scss";
+@import "media.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $beige;
+  font-family: "Poiret One", cursive;
+}
+
+.home-navigation {
+  animation: menuAppear 1s;
+}
+
+
+
+.about-section {
+  margin: 130px 70px 100px 70px;
+
+  .about-ciao {
+    margin-bottom: 50px;
+    text-align: center;
+
+    .img-container {
+      text-align: center;
+      margin-bottom: 30px;
+      border-right: 1px solid transparent;
+
+      .img-container-div {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        animation: aboutImageContainerDivAppear 1.5s;
+
+        img {
+          text-align: center;
+          border-radius: 50%;
+          border: 1px solid black;
+          background-color: black;
+          width: 200px;
+          height: 200px;
+          z-index: 99;
+          animation: aboutImageAppear linear 1s;
+        }
+
+      }
+    }
+
+
+    .main-title {
+      font-family: "Poiret One", cursive;
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin: 50px 0;
+      display: inline;
+      animation: aboutCiaoTitleAppear 0.5s;
+
+    }
+
+    .main-p {
+      font-family: "Poiret One", cursive;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin: 50px 10px;
+      display: inline;
+      letter-spacing: 0;
+      animation: aboutPappear 2.5s;
+    }
+
+  }
+
+
+  .arrow-move {
+    background-image: url('../../assets/img/portfolio/arrow.svg');
+    background-size: 40px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin: 30px auto;
+    animation: menuAppear 1s;
+
+
+  }
+
+  .arrow-move-1 {
+    animation: arrowMove 1s infinite;
+  }
+
+  .arrow-move-2 {
+    margin-top: -45px;
+    animation: arrowMove 1s infinite;
+    animation-delay: 0.1s;
+  }
+
+  .arrow-move-3 {
+    margin-top: -45px;
+    animation: arrowMove 1s infinite;
+    animation-delay: 0.2s;
+
+  }
+
+
+
+  .about-main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation: aboutMainAppear ease-out 1.5s;
+
+    h2 {
+      font-family: "Poiret One", cursive;
+      font-size: 55px;
+      font-weight: bold;
+      margin: 50px;
+    }
+
+
+    div {
+      width: 50%;
+    }
+
+
+
+    .aboutme-container {
+      z-index: 109;
+    }
+
+    .pie-section {
+
+
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+
+      .pie {
+        margin: 0 auto;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        padding: 0;
+        background-image: conic-gradient(
+        white 120deg,
+        $darkred 0 240deg,
+        black 0deg);
+        position: relative;
+        transition: all 0.3s;
+        animation-name: pieBorder;
+      	animation-duration: 1.5s;
+      	animation-timing-function: linear;
+      	animation-iteration-count: infinite;
+
+        & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          border-radius: 0%;
+          animation: none;
+        }
+
+        &:hover .pie-frontend h3 {
+          top: 7%;
+          left: 6%;
+        }
+
+        &:hover .pie-frontend ul {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 999;
+          top: 30%;
+          left: 9%;
+
+          & li {
+            line-height: 33px;
+
+            &::before {
+              content:"";
+              display: inline-block;
+              background-image: url(../img/about/skills/arrow-beige.svg);
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              margin-right: 5px;
+              margin-left: -19.3px;
+            }
+          }
+        }
+
+        &:hover .pie-cms h3 {
+          top: 10%;
+          left: 67%;
+        }
+
+        &:hover .pie-cms ul {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 999;
+          top: 25%;
+          left: 67%;
+          line-height: 33px;
+
+          & li {
+            line-height: 33px;
+            white-space: nowrap;
+
+            &::before {
+              content:"";
+              display: inline-block;
+              background-image: url(../img/about/skills/arrow-darkred.svg);
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              margin-right: 5px;
+              margin-left: -19.3px;
+            }
+
+            .altervista {
+              font-size: 17px;
+            }
+          }
+        }
+
+
+        &:hover .pie-lingue h3 {
+          bottom: 27%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        &:hover .pie-lingue ul {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 999;
+          bottom: 3%;
+          left: 50%;
+          transform: translateX(-50%);
+          line-height: 33px;
+
+          & li {
+            line-height: 33px;
+
+            &::before {
+              content:"";
+              display: inline-block;
+              background-image: url(../img/about/skills/arrow-white.svg);
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              margin-right: 5px;
+              margin-left: -19.3px;
+            }
+          }
+
+        }
+
+
+
+
+
+
+        .pie-div {
+
+          h3 {
+            position: absolute;
+            font-weight: bold;
+            font-size: 35px;
+          }
+
+          ul {
+            position: absolute;
+            display: hidden;
+            font-size: 0px;
+
+          }
+        }
+
+        .pie-frontend {
+          color: $beige;
+
+          h3 {
+            top: 29%;
+            left: 9%;
+          }
+
+          ul {
+            top: 60%;
+            left: 13%;
+
+            li {
+              list-style-type: none;
+
+            }
+          }
+        }
+
+        .pie-cms {
+          color: $darkred;
+
+          h3 {
+            top: 33%;
+            left: 67%;
+          }
+
+          ul {
+            top: 33%;
+            right: 19%;
+
+            li {
+              list-style-type: none;
+
+
+                .altervista {
+                  font-size: 0px;
+                  font-weight: bold;
+                }
+            }
+          }
+        }
+
+        .pie-lingue {
+          color: white;
+
+          h3 {
+            bottom: 17%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          ul {
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            li {
+              list-style-type: none;
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+    .cosa-faccio-container {
+      width: 100%;
+
+      h2 {
+        text-align: center;
+      }
+
+      ul {
+        margin: 100px 50px 50px 50px;
+
+        li {
+          list-style-type: none;
+          font-family: "Poiret One", cursive;
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 50px;
+          text-align: center;
+
+          &::before {
+            content:"";
+            display: block;
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 15px auto;
+          }
+
+        }
+
+        .cosa-faccio-code::before {
+          background-image: url(../img/about/code.svg);
+        }
+
+        .cosa-faccio-editor::before {
+          background-image: url(../img/about/editor.svg);
+        }
+
+      }
+
+    }
+
+
+
+
+    .voglio-container {
+      width: 40%;
+      margin-top: 100px;
+      border-left: 2px solid black;
+
+
+
+      h2 {
+        padding: 10px;
+        color: $beige;
+        background-color: black;
+
+      }
+
+      ul {
+        margin: 50px 50px 50px 70px;
+
+
+
+        li {
+          list-style-type: none;
+          font-family: "Poiret One", cursive;
+          font-size: 25px;
+          font-weight: bold;
+          line-height: 35px;
+          margin-bottom: 20px;
+
+
+          &::before {
+            content:"";
+            display: inline-block;
+            background-image: url(../img/about/skills/rombo-black.svg);
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            margin-left: -19.3px;
+          }
+        }
+      }
+    }
+
+
+    .adoro-container {
+      width: 40%;
+      margin-top: 100px;
+      border-left: 2px solid $darkred;
+
+
+      h2 {
+        padding: 10px;
+        color: $beige;
+        background-color: $darkred;
+
+      }
+
+      ul {
+        margin: 50px 50px 50px 70px;
+
+        li {
+          list-style-type: none;
+          font-family: "Poiret One", cursive;
+          font-size: 25px;
+          font-weight: bold;
+          line-height: 35px;
+          margin-bottom: 20px;
+
+          &::before {
+            content:"";
+            display: inline-block;
+            background-image: url(../img/about/skills/rombo-black.svg);
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            margin-left: -19.3px;
+          }
+        }
+      }
+
+    }
+
+
+    .sudime-container {
+      width: 70%;
+
+  /*    & h2 {
+        transition: all 0.3s;
+      }
+
+      &:hover h2 {
+        font-size: 50px;
+        margin: 38.5px;
+      } */
+
+
+
+      h2 {
+        text-align: center;
+      }
+
+      ul {
+        margin: 50px;
+
+
+        li {
+          list-style-type: none;
+          font-family: "Poiret One", cursive;
+          font-size: 25px;
+          line-height: 35px;
+          margin-bottom: 20px;
+
+          &::before {
+            content:"";
+            display: inline-block;
+            background-image: url(../img/about/skills/rombo-black.svg);
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            margin-left: -19.3px;
+          }
+
+          span {
+            font-weight: bold;
+          }
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+            color: $darkred;
+            font-family: "Megrim", cursive;
+          }
+
+        }
+
+
+      }
+
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+  .about-main-div {
+    display: flex;
+    flex-wrap: wrap !important;
+    width: 100%;
+
+    div {
+      width: 100% !important;
+    }
+
+    .aboutme-container {
+      width: 100%;
+
+
+
+      h2 {
+        text-align: center;
+      }
+
+    }
+
+    .img-container {
+
+    }
+
+    .pie {
+      width: 500px !important;
+    }
+
+
+    .cosa-faccio-container {
+      margin: 0 auto;
+
+
+      h2 {
+        text-align: center;
+      }
+
+      ul {
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          text-align: center;
+          margin: 0px 30px;
+
+          &::before {
+            content:"";
+            display: block;
+            background-image: url(../img/about/skills/rombo-black.svg);
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 15px auto;
+          }
+
+        }
+      }
+
+    }
+
+
+    .voglio-container {
+      width: 100%;
+
+    }
+
+
+    .adoro-container {
+      width: 100%;
+
+
+    }
+
+
+    .sudime-container {
+      width: 100%;
+
+    }
+
+
+
+  }
+
+}
