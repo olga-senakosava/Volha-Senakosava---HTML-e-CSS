@@ -48,7 +48,7 @@
         flex-wrap: wrap;
         align-items: center;
         position: fixed;
-        top: 42% !important;
+        top: 40% !important;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
@@ -162,7 +162,7 @@
 
       .portfolio-item-intro {
         flex-wrap: wrap !important;
-        align-items: flex-start;
+        align-items: center !important;
 
 
         div {
@@ -178,7 +178,7 @@
         .cose-div, .strumenti-div {
           border-left: none !important;
           border-top: none !important;
-          width: 40%;
+          width: 50%;
 
           &::before {
             content:'';
@@ -213,10 +213,14 @@
 
         .portfolio-item-button {
           display: flex;
-          justify-content: center !important;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          width: 100%;
 
           button {
-            margin: 70px auto 30px auto !important;
+            margin: 70px auto !important;
 
 
             a {
@@ -497,6 +501,196 @@
 
 
 
+
+
+    .pie-section {
+
+
+      h2 {
+      }
+
+      .pie {
+        margin: 0 auto;
+        border-radius: 0%;
+        background-image: none;
+        position: static;
+        animation: none;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+        & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
+          transition: none;
+        }
+
+
+
+    /*    &:hover .pie-frontend ul {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 999;
+          top: 30%;
+          left: 9%;
+
+          & li {
+            line-height: 33px;
+
+          }
+        }
+
+        &:hover .pie-cms ul {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 999;
+          top: 25%;
+          left: 67%;
+          line-height: 33px;
+
+          & li {
+            line-height: 33px;
+            white-space: nowrap;
+
+
+            .altervista {
+            }
+          }
+        }
+
+
+        &:hover .pie-lingue h3 {
+        }
+
+        &:hover .pie-lingue ul {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 999;
+          bottom: 3%;
+          left: 50%;
+          transform: translateX(-50%);
+          line-height: 33px;
+
+          & li {
+            line-height: 33px;
+
+          }
+
+        } */
+
+
+
+
+
+
+        .pie-div {
+          width: 40% !important;
+
+          h3 {
+            position: static !important;
+          }
+
+          ul {
+            position: static !important;
+            display: block !important;
+            font-size: 20px !important;
+
+          }
+        }
+
+        .pie-frontend {
+          color: $beige;
+
+          h3 {
+          }
+
+          ul {
+
+            li {
+              &::before {
+                content:"";
+                display: inline-block;
+                background-image: url(../img/about/skills/arrow-beige.svg);
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 5px;
+                margin-left: -19.3px;
+              }
+
+            }
+          }
+        }
+
+        .pie-cms {
+          color: $darkred;
+
+          h3 {
+          }
+
+          ul {
+
+            li {
+              &::before {
+                content:"";
+                display: inline-block;
+                background-image: url(../img/about/skills/arrow-darkred.svg);
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 5px;
+                margin-left: -19.3px;
+              }
+
+              .altervista {
+                font-size: 17px !important;
+              }
+            }
+          }
+        }
+
+        .pie-lingue {
+          color: white;
+
+          h3 {
+          }
+
+          ul {
+
+            li {
+              &::before {
+                content:"";
+                display: inline-block;
+                background-image: url(../img/about/skills/arrow-white.svg);
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 5px;
+                margin-left: -19.3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
   .pie-section {
 
 
@@ -505,7 +699,8 @@
 
     .pie {
       margin: 0 auto;
-      width: 100% !important;
+      background-image: none !important;
+
 
       & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
         transition: all 0.3s;
@@ -640,6 +835,7 @@
 
       .pie-frontend {
         color: $beige;
+        background-color: black !important;
 
         h3 {
           top: 29%;
@@ -659,6 +855,8 @@
 
       .pie-cms {
         color: $darkred;
+        background-color: white;
+
 
         h3 {
           top: 33%;
@@ -683,6 +881,8 @@
 
       .pie-lingue {
         color: white;
+        background-color: $darkred;
+
 
         h3 {
           bottom: 17%;
@@ -719,6 +919,7 @@
     .portfolio-item-div {
 
       .portfolio-item-intro {
+        justify-content: center !important;
         align-items: center;
 
 
@@ -859,12 +1060,13 @@
 
 
     h2 {
+      font-size: 37px !important;
       margin-bottom: 20px;
     }
 
 
     .portfolio-item-div {
-      margin: 30px 0px 15px 0px !important;
+      margin: 30px auto 15px auto !important;
 
 
       .portfolio-item-intro {
@@ -880,8 +1082,8 @@
 
         }
         .cose-div, .strumenti-div {
-          padding-top: 0 !important;
-          padding-bottom: 0 !important;
+          padding: 0 !important;
+          margin-top: -20px !important;
 
 
           &::before {
@@ -908,9 +1110,9 @@
           button {
 
 
-
             a {
               padding: 30px !important;
+
 
               &:hover {
                 background-size: 80px !important;
@@ -922,8 +1124,13 @@
       }
 
       .portfolio-item-description {
-        font-size: 25px !important;
+        margin-left: -30px !important;
         width: 100%;
+
+        p {
+          font-size: 23px !important;
+          width: 90%;
+        }
       }
 
     }
