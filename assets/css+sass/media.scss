@@ -562,12 +562,10 @@
 
 
          .aboutme-container {
-           z-index: 109;
          }
 
          .pie-section {
            height: 100%;
-           width: 100%;
            margin-left: 0;
            margin-right: 0;
 
@@ -584,7 +582,7 @@
              flex-wrap: wrap !important;
              font-weight: bold;
              line-height: 33px;
-             width: 100%;
+             width: 100% !important;
 
 
 
