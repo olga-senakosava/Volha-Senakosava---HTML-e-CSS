@@ -513,228 +513,477 @@
      .about-section {
        margin-left: auto;
        margin-right: auto;
+
+       .about-ciao {
+
+         .img-container {
+
+           .img-container-div {
+
+             img {
+             }
+
+           }
+         }
+
+
+         .main-title {
+           font-size: 40px;
+           font-weight: bold;
+           text-align: center;
+           margin: 50px 0;
+           display: inline;
+           animation: aboutCiaoTitleAppear 0.5s;
+
+         }
+
+         .main-p {
+           font-size: 20px;
+         }
+
+       }
+
+
+       .about-main-div {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+
+         h2 {
+           font-size: 40px;
+           margin: 30px;
+         }
+
+
+         div {
+           width: 100%;
+         }
+
+
+
+         .aboutme-container {
+           z-index: 109;
+         }
+
+         .pie-section {
+           height: 100%;
+           width: 100%;
+           margin-left: 0;
+           margin-right: 0;
+
+           h2 {
+           }
+
+           .pie {
+             border-radius: 0% !important;
+             background-image: none !important;
+             position: static !important;
+             animation: none !important;
+             display: flex !important;
+             justify-content: space-around;
+             flex-wrap: wrap !important;
+             font-weight: bold;
+             line-height: 33px;
+             width: 100%;
+
+
+
+             & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
+             }
+
+
+
+         /*    &:hover .pie-frontend ul {
+               display: block;
+               font-size: 20px;
+               font-weight: bold;
+               z-index: 999;
+               top: 30%;
+               left: 9%;
+
+               & li {
+                 line-height: 33px;
+
+               }
+             }
+
+             &:hover .pie-cms ul {
+               display: block;
+               font-size: 20px;
+               font-weight: bold;
+               z-index: 999;
+               top: 25%;
+               left: 67%;
+               line-height: 33px;
+
+               & li {
+                 line-height: 33px;
+                 white-space: nowrap;
+
+
+                 .altervista {
+                 }
+               }
+             }
+
+
+             &:hover .pie-lingue h3 {
+             }
+
+             &:hover .pie-lingue ul {
+               display: block;
+               font-size: 20px;
+               font-weight: bold;
+               z-index: 999;
+               bottom: 3%;
+               left: 50%;
+               transform: translateX(-50%);
+               line-height: 33px;
+
+               & li {
+                 line-height: 33px;
+
+               }
+
+             } */
+
+
+
+
+
+
+             .pie-div {
+               width: 40% !important;
+               padding: 25px !important;
+               margin: 10px !important;
+
+
+               h3 {
+                 position: static !important;
+                 font-size: 25px !important;
+                 padding: 5px 15px;
+               }
+
+               ul {
+                 position: static !important;
+                 display: block !important;
+                 font-size: 16px !important;
+
+               }
+             }
+
+             .pie-frontend {
+               color: $beige;
+               background-color: black;
+
+               h3 {
+                 padding-top: 20px;
+                 padding-bottom: 10px;
+                 border-bottom: 2px solid $beige;
+                 margin: -25px -25px 25px -25px;
+
+               }
+
+               ul {
+                 margin-left: 25px;
+
+                 li {
+                   white-space: nowrap;
+
+                   &::before {
+                     content:"";
+                     display: inline-block;
+                     background-image: url(../img/about/skills/arrow-beige.svg);
+                     width: 15px;
+                     height: 15px;
+                     background-size: contain;
+                     background-repeat: no-repeat;
+                     margin-right: 5px;
+                     margin-left: -19.3px;
+                   }
+
+                 }
+               }
+             }
+
+             .pie-cms {
+               color: $darkred;
+               background-color: white;
+
+
+               h3 {
+                 padding-top: 20px;
+                 padding-bottom: 10px;
+                 border-bottom: 2px solid $beige;
+                 margin: -25px -25px 25px -25px;
+
+               }
+
+               ul {
+                 margin-left: 25px;
+
+
+                 li {
+                   &::before {
+                     content:"";
+                     display: inline-block;
+                     background-image: url(../img/about/skills/arrow-darkred.svg);
+                     width: 15px;
+                     height: 15px;
+                     background-size: contain;
+                     background-repeat: no-repeat;
+                     margin-right: 5px;
+                     margin-left: -19.3px;
+                   }
+
+                   .altervista {
+                     font-size: 17px !important;
+                   }
+                 }
+               }
+             }
+
+             .pie-lingue {
+               color: white;
+               background-color: $darkred;
+               position: static;
+               display: flex;
+               justify-content: flex-end;
+               flex-wrap: wrap;
+
+
+               h3 {
+                 padding-top: 20px;
+                 padding-bottom: 10px;
+                 border-bottom: 2px solid $beige;
+                 margin: -25px -125px 23px 50px;
+                 width: 133%;
+
+               }
+
+               ul {
+                 display: block;
+                 margin: 0 auto;
+
+
+                 li {
+                   &::before {
+                     content:"";
+                     display: inline-block;
+                     background-image: url(../img/about/skills/arrow-white.svg);
+                     width: 15px;
+                     height: 15px;
+                     background-size: contain;
+                     background-repeat: no-repeat;
+                     margin-right: 5px;
+                     margin-left: -19.3px;
+                   }
+                 }
+               }
+             }
+           }
+         }
+
+
+
+
+         .cosa-faccio-container {
+           width: 100%;
+
+           h2 {
+             text-align: center;
+           }
+
+           ul {
+             margin: 100px 50px 50px 50px;
+
+             li {
+               list-style-type: none;
+               font-family: "Poiret One", cursive;
+               font-size: 30px;
+               line-height: 40px;
+               margin-bottom: 50px;
+               text-align: center;
+
+               &::before {
+                 content:"";
+                 display: block;
+                 width: 80px;
+                 height: 80px;
+                 background-size: contain;
+                 background-repeat: no-repeat;
+                 background-position: center;
+                 margin: 15px auto;
+               }
+
+             }
+
+             .cosa-faccio-code::before {
+               background-image: url(../img/about/code.svg);
+             }
+
+             .cosa-faccio-editor::before {
+               background-image: url(../img/about/editor.svg);
+             }
+
+           }
+
+         }
+
+
+
+
+         .voglio-container {
+           width: 40%;
+           margin-top: 100px;
+           border-left: 2px solid black;
+
+
+
+           h2 {
+             padding: 10px;
+             color: $beige;
+             background-color: black;
+
+           }
+
+           ul {
+             margin: 50px 50px 50px 70px;
+
+
+
+             li {
+               list-style-type: none;
+               font-family: "Poiret One", cursive;
+               font-size: 25px;
+               font-weight: bold;
+               line-height: 35px;
+               margin-bottom: 20px;
+
+
+               &::before {
+                 content:"";
+                 display: inline-block;
+                 background-image: url(../img/about/skills/rombo-black.svg);
+                 width: 15px;
+                 height: 15px;
+                 background-size: contain;
+                 background-repeat: no-repeat;
+                 margin-right: 5px;
+                 margin-left: -19.3px;
+               }
+             }
+           }
+         }
+
+
+         .adoro-container {
+           width: 40%;
+           margin-top: 100px;
+           border-left: 2px solid $darkred;
+
+
+           h2 {
+             padding: 10px;
+             color: $beige;
+             background-color: $darkred;
+
+           }
+
+           ul {
+             margin: 50px 50px 50px 70px;
+
+             li {
+               list-style-type: none;
+               font-family: "Poiret One", cursive;
+               font-size: 25px;
+               font-weight: bold;
+               line-height: 35px;
+               margin-bottom: 20px;
+
+               &::before {
+                 content:"";
+                 display: inline-block;
+                 background-image: url(../img/about/skills/rombo-black.svg);
+                 width: 15px;
+                 height: 15px;
+                 background-size: contain;
+                 background-repeat: no-repeat;
+                 margin-right: 5px;
+                 margin-left: -19.3px;
+               }
+             }
+           }
+
+         }
+
+
+         .sudime-container {
+           width: 70%;
+
+       /*    & h2 {
+             transition: all 0.3s;
+           }
+
+           &:hover h2 {
+             font-size: 50px;
+             margin: 38.5px;
+           } */
+
+
+
+           h2 {
+             text-align: center;
+           }
+
+           ul {
+             margin: 50px;
+
+
+             li {
+               list-style-type: none;
+               font-family: "Poiret One", cursive;
+               font-size: 25px;
+               line-height: 35px;
+               margin-bottom: 20px;
+
+               &::before {
+                 content:"";
+                 display: inline-block;
+                 background-image: url(../img/about/skills/rombo-black.svg);
+                 width: 15px;
+                 height: 15px;
+                 background-size: contain;
+                 background-repeat: no-repeat;
+                 margin-right: 5px;
+                 margin-left: -19.3px;
+               }
+
+               span {
+                 font-weight: bold;
+               }
+
+               a {
+                 text-decoration: none;
+                 font-weight: bold;
+                 color: $darkred;
+                 font-family: "Megrim", cursive;
+               }
+
+             }
+
+
+           }
+
+         }
+
+       }
+
+
      }
 
 
 
-    .pie-section {
-      height: 100%;
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-
-      h2 {
-      }
-
-      .pie {
-        border-radius: 0% !important;
-        background-image: none !important;
-        position: static !important;
-        animation: none !important;
-        display: flex !important;
-        justify-content: space-around;
-        flex-wrap: wrap !important;
-        font-weight: bold;
-        line-height: 33px;
-        width: 100%;
-
-
-
-        & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
-        }
-
-
-
-    /*    &:hover .pie-frontend ul {
-          display: block;
-          font-size: 20px;
-          font-weight: bold;
-          z-index: 999;
-          top: 30%;
-          left: 9%;
-
-          & li {
-            line-height: 33px;
-
-          }
-        }
-
-        &:hover .pie-cms ul {
-          display: block;
-          font-size: 20px;
-          font-weight: bold;
-          z-index: 999;
-          top: 25%;
-          left: 67%;
-          line-height: 33px;
-
-          & li {
-            line-height: 33px;
-            white-space: nowrap;
-
-
-            .altervista {
-            }
-          }
-        }
-
-
-        &:hover .pie-lingue h3 {
-        }
-
-        &:hover .pie-lingue ul {
-          display: block;
-          font-size: 20px;
-          font-weight: bold;
-          z-index: 999;
-          bottom: 3%;
-          left: 50%;
-          transform: translateX(-50%);
-          line-height: 33px;
-
-          & li {
-            line-height: 33px;
-
-          }
-
-        } */
-
-
-
-
-
-
-        .pie-div {
-          width: 40% !important;
-          padding: 25px !important;
-          margin: 10px !important;
-
-
-          h3 {
-            position: static !important;
-            font-size: 25px !important;
-            padding: 5px 15px;
-          }
-
-          ul {
-            position: static !important;
-            display: block !important;
-            font-size: 16px !important;
-
-          }
-        }
-
-        .pie-frontend {
-          color: $beige;
-          background-color: black;
-
-          h3 {
-            padding-top: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid $beige;
-            margin: -25px -25px 25px -25px;
-
-          }
-
-          ul {
-            margin-left: 25px;
-
-            li {
-              white-space: nowrap;
-
-              &::before {
-                content:"";
-                display: inline-block;
-                background-image: url(../img/about/skills/arrow-beige.svg);
-                width: 15px;
-                height: 15px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-right: 5px;
-                margin-left: -19.3px;
-              }
-
-            }
-          }
-        }
-
-        .pie-cms {
-          color: $darkred;
-          background-color: white;
-
-
-          h3 {
-            padding-top: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid $beige;
-            margin: -25px -25px 25px -25px;
-
-          }
-
-          ul {
-            margin-left: 25px;
-
-
-            li {
-              &::before {
-                content:"";
-                display: inline-block;
-                background-image: url(../img/about/skills/arrow-darkred.svg);
-                width: 15px;
-                height: 15px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-right: 5px;
-                margin-left: -19.3px;
-              }
-
-              .altervista {
-                font-size: 17px !important;
-              }
-            }
-          }
-        }
-
-        .pie-lingue {
-          color: white;
-          background-color: $darkred;
-          position: static;
-          display: flex;
-          justify-content: flex-end;
-          flex-wrap: wrap;
-
-
-          h3 {
-            padding-top: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid $beige;
-            margin: -25px -125px 23px 50px;
-            width: 133%;
-
-          }
-
-          ul {
-            display: block;
-            margin: 0 auto;
-
-
-            li {
-              &::before {
-                content:"";
-                display: inline-block;
-                background-image: url(../img/about/skills/arrow-white.svg);
-                width: 15px;
-                height: 15px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-right: 5px;
-                margin-left: -19.3px;
-              }
-            }
-          }
-        }
-      }
-    }
 
 
 
