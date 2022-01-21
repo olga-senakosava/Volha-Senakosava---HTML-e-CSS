@@ -510,6 +510,13 @@
 
 
 
+     .about-section {
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+
+
     .pie-section {
       height: 100%;
       width: 100%;
@@ -520,22 +527,20 @@
       }
 
       .pie {
-        margin: 0 auto;
         border-radius: 0% !important;
         background-image: none !important;
         position: static !important;
         animation: none !important;
         display: flex !important;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-wrap: wrap !important;
         font-weight: bold;
         line-height: 33px;
-        width: 100% !important;
+        width: 100%;
 
 
 
         & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
-          transition: none;
         }
 
 
@@ -600,18 +605,21 @@
 
 
         .pie-div {
-          width: 100% !important;
-          padding: 30px;
+          width: 40% !important;
+          padding: 25px !important;
+          margin: 10px !important;
 
 
           h3 {
             position: static !important;
+            font-size: 25px !important;
+            padding: 5px 15px;
           }
 
           ul {
             position: static !important;
             display: block !important;
-            font-size: 20px !important;
+            font-size: 16px !important;
 
           }
         }
@@ -621,11 +629,19 @@
           background-color: black;
 
           h3 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $beige;
+            margin: -25px -25px 25px -25px;
+
           }
 
           ul {
+            margin-left: 25px;
 
             li {
+              white-space: nowrap;
+
               &::before {
                 content:"";
                 display: inline-block;
@@ -648,9 +664,16 @@
 
 
           h3 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $beige;
+            margin: -25px -25px 25px -25px;
+
           }
 
           ul {
+            margin-left: 25px;
+
 
             li {
               &::before {
@@ -676,16 +699,23 @@
           color: white;
           background-color: $darkred;
           position: static;
-          margin: 0 auto;
-          text-align: center;
+          display: flex;
+          justify-content: flex-end;
+          flex-wrap: wrap;
 
 
           h3 {
-            display: block;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $beige;
+            margin: -25px -125px 23px 50px;
+            width: 133%;
+
           }
 
           ul {
             display: block;
+            margin: 0 auto;
 
 
             li {
