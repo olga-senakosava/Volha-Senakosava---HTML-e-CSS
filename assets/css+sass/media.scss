@@ -4,6 +4,9 @@
 
 @media screen and (max-width: 940px) {  /* Senza !important alcune cose non mi funzionano nel @media, non capisco perchè */
 
+     /*  Menu  */
+
+
   nav {
 
 
@@ -153,6 +156,10 @@
 
 
 @media screen and (max-width: 850px) {
+
+
+    /*  Portfolio-item  */
+
 
   .portfolio-item-section {
 
@@ -498,11 +505,8 @@
 
 @media screen and (max-width: 650px) {
 
-    .sudime-container {
-      width: 100%;
-    }
 
-
+     /*  About  */
 
 
 
@@ -514,13 +518,17 @@
 
       .pie {
         margin: 0 auto;
-        border-radius: 0%;
-        background-image: none;
-        position: static;
-        animation: none;
-        display: flex;
-        justify-content: space-around;
+        border-radius: 0% !important;
+        background-image: none !important;
+        position: static !important;
+        animation: none !important;
+        display: flex !important;
+        justify-content: center;
         flex-wrap: wrap;
+        font-weight: bold;
+        line-height: 33px;
+
+
 
 
         & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
@@ -589,7 +597,9 @@
 
 
         .pie-div {
-          width: 40% !important;
+          width: 100% !important;
+          padding: 30px;
+
 
           h3 {
             position: static !important;
@@ -605,6 +615,7 @@
 
         .pie-frontend {
           color: $beige;
+          background-color: black;
 
           h3 {
           }
@@ -630,6 +641,8 @@
 
         .pie-cms {
           color: $darkred;
+          background-color: white;
+
 
           h3 {
           }
@@ -658,11 +671,19 @@
 
         .pie-lingue {
           color: white;
+          background-color: $darkred;
+          position: static;
+          margin: 0 auto;
+          text-align: center;
+
 
           h3 {
+            display: block;
           }
 
           ul {
+            display: block;
+
 
             li {
               &::before {
@@ -684,227 +705,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-  .pie-section {
-
-
-    h2 {
-    }
-
-    .pie {
-      margin: 0 auto;
-      background-image: none !important;
-
-
-      & .pie-div ul, & .pie-div h3, & .pie-div .altervista {
-        transition: all 0.3s;
+      .sudime-container p {
+        width: 100%;
       }
-
-      &:hover {
-        border-radius: 0%;
-        animation: none;
-      }
-
-      &:hover .pie-frontend h3 {
-        top: 7%;
-        left: 6%;
-      }
-
-      &:hover .pie-frontend ul {
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        z-index: 999;
-        top: 30%;
-        left: 9%;
-
-        & li {
-          line-height: 33px;
-
-          &::before {
-            content:"";
-            display: inline-block;
-            background-image: url(../img/about/skills/arrow-beige.svg);
-            width: 15px;
-            height: 15px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-right: 5px;
-            margin-left: -19.3px;
-          }
-        }
-      }
-
-      &:hover .pie-cms h3 {
-        top: 10%;
-        left: 67%;
-      }
-
-      &:hover .pie-cms ul {
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        z-index: 999;
-        top: 25%;
-        left: 67%;
-        line-height: 33px;
-
-        & li {
-          line-height: 33px;
-          white-space: nowrap;
-
-          &::before {
-            content:"";
-            display: inline-block;
-            background-image: url(../img/about/skills/arrow-darkred.svg);
-            width: 15px;
-            height: 15px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-right: 5px;
-            margin-left: -19.3px;
-          }
-
-          .altervista {
-            font-size: 17px;
-          }
-        }
-      }
-
-
-      &:hover .pie-lingue h3 {
-        bottom: 27%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      &:hover .pie-lingue ul {
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        z-index: 999;
-        bottom: 3%;
-        left: 50%;
-        transform: translateX(-50%);
-        line-height: 33px;
-
-        & li {
-          line-height: 33px;
-
-          &::before {
-            content:"";
-            display: inline-block;
-            background-image: url(../img/about/skills/arrow-white.svg);
-            width: 15px;
-            height: 15px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-right: 5px;
-            margin-left: -19.3px;
-          }
-        }
-
-      }
-
-
-
-
-
-
-      .pie-div {
-
-        h3 {
-          position: absolute;
-          font-weight: bold;
-          font-size: 35px;
-        }
-
-        ul {
-          position: absolute;
-          display: hidden;
-          font-size: 0px;
-
-        }
-      }
-
-      .pie-frontend {
-        color: $beige;
-        background-color: black !important;
-
-        h3 {
-          top: 29%;
-          left: 9%;
-        }
-
-        ul {
-          top: 60%;
-          left: 13%;
-
-          li {
-            list-style-type: none;
-
-          }
-        }
-      }
-
-      .pie-cms {
-        color: $darkred;
-        background-color: white;
-
-
-        h3 {
-          top: 33%;
-          left: 67%;
-        }
-
-        ul {
-          top: 33%;
-          right: 19%;
-
-          li {
-            list-style-type: none;
-
-
-              .altervista {
-                font-size: 0px;
-                font-weight: bold;
-              }
-          }
-        }
-      }
-
-      .pie-lingue {
-        color: white;
-        background-color: $darkred;
-
-
-        h3 {
-          bottom: 17%;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        ul {
-          bottom: 10%;
-          left: 50%;
-          transform: translateX(-50%);
-
-          li {
-            list-style-type: none;
-          }
-        }
-      }
-    }
-  }
 
 
 
@@ -995,6 +798,10 @@
 @media screen and (max-width: 400px) {
 
 
+     /*  Menu  */
+
+
+
   .social-span {
     margin-left: 5px;
 
@@ -1018,6 +825,7 @@
   }
 
 
+     /*  Portfolio  */
 
 
   .portfolio-section {
@@ -1164,9 +972,3 @@
   }
 
 }
-
-
-/*  About content */
-
-
-/* Contattami content */
