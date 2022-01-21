@@ -511,7 +511,10 @@
 
 
     .pie-section {
-
+      height: 100%;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
 
       h2 {
       }
@@ -527,7 +530,7 @@
         flex-wrap: wrap;
         font-weight: bold;
         line-height: 33px;
-
+        width: 100% !important;
 
 
 
