@@ -623,12 +623,6 @@
 
          .main-title {
            font-size: 40px;
-           font-weight: bold;
-           text-align: center;
-           margin: 50px 0;
-           display: inline;
-           animation: aboutCiaoTitleAppear 0.5s;
-
          }
 
          .main-p {
@@ -717,10 +711,10 @@
                h3 {
                  position: static !important;
                  font-size: 25px !important;
-                 padding: 20px 0px 10px 30px;
+                 padding: 20px 0px 10px 0px;
                  border-bottom: 2px solid $beige;
                  margin: -25px -25px 25px -25px;
-
+                 text-align: center;
                }
 
                ul {
@@ -866,9 +860,7 @@
              .cosa-faccio-editor::before {
                background-image: url(../img/about/editor.svg);
              }
-
            }
-
          }
 
 
@@ -916,7 +908,6 @@
                }
              }
            }
-
          }
 
 
@@ -943,27 +934,15 @@
 
                a {
                }
-
              }
-
-
            }
-
          }
-
        }
-
-
      }
 
 
 
 
-
-
-      .sudime-container p {
-        width: 100%;
-      }
 
 
 
@@ -1081,6 +1060,91 @@
   }
 
 
+     /*  About  */
+
+
+     .about-section {
+       margin-left: 0px;
+       margin-right: 0px;
+}
+
+
+
+     .pie-section {
+       margin-bottom: 100px;
+
+       h2 {
+       }
+
+       .pie {
+         margin: 0;
+         width: 100% !important;
+
+
+
+         .pie-div {
+           width: 100vw !important;
+
+           h3 {
+           }
+
+           ul {
+           }
+         }
+
+         .pie-frontend {
+
+           h3 {
+           }
+
+           ul {
+
+             li {
+
+               &::before {
+               }
+
+             }
+           }
+         }
+
+         .pie-cms {
+
+
+           h3 {
+           }
+
+           ul {
+
+
+             li {
+               &::before {
+               }
+
+               .altervista {
+               }
+             }
+           }
+         }
+
+         .pie-lingue {
+
+
+           h3 {
+           }
+
+           ul {
+
+             li {
+               &::before {
+               }
+             }
+           }
+         }
+       }
+     }
+
+
      /*  Portfolio  */
 
 
@@ -1090,9 +1154,11 @@
         margin: 200px auto 70px auto;
       }
     }
-
   }
 
+
+
+     /*  Contattami  */
 
 
   .contattami-section {
