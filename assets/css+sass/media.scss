@@ -562,7 +562,7 @@
 
      .home-intro {
        position: fixed;
-       top: 40%;
+       top: 40% !important;
 
 
        .home-text-container {
@@ -586,7 +586,6 @@
          }
 
          .description {
-           margin-bottom: 50px;
 
 
            .p1 {
@@ -601,6 +600,8 @@
        }
 
        button {
+         margin-top: 70px !important;
+
 
          a {
          }
