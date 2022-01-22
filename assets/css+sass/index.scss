@@ -244,7 +244,8 @@ body {
 
 
   .portfolio-container {
-    display: fixed;
+    position: fixed;
+    display: block;
     bottom: 0;
     animation: slide1Appear 1s;
 
