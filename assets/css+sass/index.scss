@@ -244,8 +244,8 @@ body {
 
 
   .portfolio-container {
-    display: block;
-    margin-top: 10px;
+    display: fixed;
+    bottom: 0;
     animation: slide1Appear 1s;
 
 
@@ -256,7 +256,6 @@ body {
       height: 300px;
       border: 1px solid $black;
       display: inline-block;
-
       text-decoration: none;
 
     }
