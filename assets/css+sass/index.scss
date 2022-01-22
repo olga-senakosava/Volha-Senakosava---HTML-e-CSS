@@ -275,59 +275,6 @@ body {
       animation: slide1Move 20s linear infinite;
     }
 
-
-
-
-
-    .sonata {
-    }
-
-
-
-    .pizzeriadamario {
-    }
-
-
-
-    .olga {
-    }
-
-
-
-    .homesweethome {
-    }
-
-
-
-
-    .olga {
-    }
-
-
-
-
-
-    .improvedlifestyle {
-    }
-
-
-
-
-
-
-
-    .dammiunmotivo {
-    }
-
-
-
-
-
-
-
-
-    .quattrostagioni {
-    }
   }
 
 
@@ -420,7 +367,7 @@ body {
         }
 
         .p3 {
-          animation: pAppear 2.6s;
+          animation: pAppear 2.7s;
         }
       }
     }
@@ -539,14 +486,26 @@ body {
         border-top: 2px solid $beige !important;
         margin-top: 50px;
         font-size: 25px !important;
-        animation: introPhrasesMobilAppear 2.3s !important;
+        animation: introPhrasesMobileAppear 2.3s;
+
+
+        .p1 {
+          animation: pMobileAppear 2.3s !important;
+        }
+
+        .p2 {
+          animation: pMobileAppear 2.5s !important;
+        }
+
+        .p3 {
+          animation: pMobileAppear 2.7s !important;
+        }
 
       }
 
 
       .logo-letter-container {
         margin-left: 40px !important;
-
       }
     }
 

@@ -21,7 +21,10 @@ body {
 
 
 .portfolio-item-section {
-  margin: 170px 50px 50px 50px;
+  margin: 170px auto 50px auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
 
   h2 {
     font-size: 70px;
@@ -147,7 +150,7 @@ body {
     .portfolio-item-description {
       p {
         font-size: 30px;
-        margin: 70px 50px;
+        margin: 70px auto;
       }
     }
 
