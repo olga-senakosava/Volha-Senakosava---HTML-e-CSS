@@ -1083,7 +1083,7 @@
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
 
      /*  Menu  */
@@ -1179,6 +1179,7 @@
 
 
         .portfolio-item-intro {
+          display: block !important;
 
           div {
 
@@ -1195,7 +1196,7 @@
           }
           .cose-div, .strumenti-div {
             padding: 0;
-            margin-top: -20px;
+            width: 100% !important;
 
 
     /*        &::before {
