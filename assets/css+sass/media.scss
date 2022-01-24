@@ -209,11 +209,11 @@
               margin-top: 0;
 
               h3 {
-                font-size: 37px;
+                font-size: 37px !important;
               }
 
               p {
-                font-size: 25px;
+                font-size: 25px !important;
               }
 
             }
@@ -246,7 +246,7 @@
 
           .portfolio-item-description {
             font-size: 25px;
-            margin: 70px 20px;
+            margin: 70px auto !important;
           }
         }
       }
@@ -270,7 +270,7 @@
       margin: 50px 0px !important;
 
       .portfolio-item-intro {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         align-items: center;
 
 
@@ -285,8 +285,7 @@
 
         }
         .cose-div, .strumenti-div {
-          border-left: none;
-          border-top: none;
+          border-left: none !important;
           width: 50%;
 
           &::before {
@@ -334,14 +333,14 @@
           width: 100%;
 
           button {
-            margin: 70px auto;
+            margin: 70px auto !important;
 
 
             a {
               padding: 40px !important;
 
               &:hover {
-                background-size: 120px;
+                background-size: 120px !important;
               }
 
             }
@@ -1244,26 +1243,29 @@
 
 
       h2 {
-        font-size: 37px !important;
+        font-size: 40px !important;
         margin-bottom: 20px !important;
       }
 
 
       .portfolio-item-div {
-        margin: 30px auto 15px auto;
+        margin: 30px auto 15px auto !important;
 
 
         .portfolio-item-intro {
-          display: block !important;
+          display: flex !important;
+          justify-content: center !important;
+          margin: 0 auto !important;
 
           div {
 
 
             h3 {
+              font-size: 35px !important;
             }
 
             p {
-
+              font-size: 20px !important;
             }
 
           }
@@ -1285,12 +1287,6 @@
             } */
           }
 
-          .cose-div {
-
-          }
-
-          .strumenti-div {
-          }
 
           .portfolio-item-button {
 
@@ -1312,12 +1308,23 @@
 
         .portfolio-item-description {
           width: 100%;
+          margin: 0 auto !important;
 
           p {
             width: 90%;
-            font-size: 30px !important;
+            font-size: 20px !important;
           }
         }
+
+
+        .portfolio-item-screen {
+          padding: 10px 0 !important;
+
+          img {
+
+          }
+        }
+
 
       }
     }
