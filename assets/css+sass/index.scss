@@ -9,21 +9,25 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar, ::-moz-scrollbar {
-  width: 13px !important;
+
+::-webkit-scrollbar {
+  width: 13px;
 }
 
-::-webkit-scrollbar-track, ::-moz-scrollbar-track {
-  background: transparent !important;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb {
-  background: $darkred !important;
+::-webkit-scrollbar-thumb {
+  background: $darkred;
 }
 
-::-webkit-scrollbar-thumb:hover, ::-moz-scrollbar-thumb:hover {
-  background: $black !important;
+::-webkit-scrollbar-thumb:hover {
+  background: $black;
 }
+
+
+
 
 body {
   background-color: black;
@@ -421,111 +425,6 @@ body {
         }
 
       }
-    }
-  }
-}
-
-
-/*@media screen and (max-width: 940px) {
-
-/*    .burger {
-      text-decoration: none;
-      display: block;
-      color: red;
-      font-family: "Poiret One", cursive;
-      font-size: 20px;
-      z-index: 999;
-    }*/
-
-/*    .menu-normal {
-      display: flex;
-      justify-content: space-around;
-
-      li {
-        list-style-type: none;
-        padding: 0 30px;
-
-        .burger {
-          color: white !important;
-        }
-        a {
-          display: block;
-          text-decoration: none;
-          color: $beige;
-          font-family: "Poiret One", cursive;
-          font-size: 20px;
-
-        }
-      }
-    }
-
-
-}*/
-
-
-@media screen and (max-width: 800px) {
-  .img1, .img2 {
-    display: none;
-  }
-}
-
-
-@media screen and (max-width: 750px) {
-  .home-intro {
-    text-align: center !important;      /* Ho dovuto mettere così tanti !important, altrimenti queste cose proprio non funzionano. */
-
-
-    .home-text-container {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 30px;
-      margin-top: 50px;
-
-      .description {
-        border-left: 2px solid transparent !important;
-        border-top: 2px solid $beige !important;
-        margin-top: 50px;
-        font-size: 25px !important;
-        animation: introPhrasesMobileAppear 2.3s;
-
-
-        .p1 {
-          animation: pMobileAppear 2.3s !important;
-        }
-
-        .p2 {
-          animation: pMobileAppear 2.5s !important;
-        }
-
-        .p3 {
-          animation: pMobileAppear 2.7s !important;
-        }
-
-      }
-
-
-      .logo-letter-container {
-        margin-left: 40px !important;
-      }
-    }
-
-    .home-button-container {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-
-      .home-button {
-        margin-top: -20px !important;
-
-
-        a {
-          font-size: 25px;
-          font-family: "Megrim", cursive;
-          padding: 25px;
-        }
-
-      }
-
     }
   }
 }

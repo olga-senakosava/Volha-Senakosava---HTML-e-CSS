@@ -523,6 +523,8 @@ body {
           font-size: 25px;
           line-height: 35px;
           margin-bottom: 20px;
+          font-weight: bold;
+
 
           &::before {
             content:"";
@@ -537,7 +539,7 @@ body {
           }
 
           span {
-            font-weight: bold;
+            color: $darkred;
           }
 
           a {
