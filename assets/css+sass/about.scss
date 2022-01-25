@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import "_partials.scss";
-@import "media.scss";
 
 
 * {
@@ -558,4 +557,378 @@ body {
 
   }
 
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1050px) {
+  .about-main-div {
+    display: flex;
+    flex-wrap: wrap /*!important*/;
+    width: 100%;
+
+    div {
+      width: 100% /*!important*/;
+    }
+
+    .aboutme-container {
+      width: 100%;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .pie {
+      width: 500px /*!important*/;
+    }
+
+
+    .cosa-faccio-container {
+      margin: 0 auto;
+
+      h2 {
+        text-align: center;
+      }
+
+      ul {
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          text-align: center;
+          margin: 0px 30px;
+
+          &::before {
+            content:"";
+            display: block;
+            background-image: url(../img/about/skills/rombo-black.svg);
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 15px auto;
+          }
+        }
+      }
+    }
+
+
+    .voglio-container {
+      width: 100%;
+    }
+
+
+    .adoro-container {
+      width: 100%;
+    }
+
+
+    .sudime-container {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+  .about-section {
+    margin-left: auto;
+    margin-right: auto;
+
+    .about-ciao {
+
+      .main-title {
+        font-size: 40px /*!important*/;
+      }
+
+      .main-p {
+        font-size: 20px /*!important*/;
+        margin: 50px 0px;
+      }
+    }
+
+
+    .about-main-div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      h2 {
+        font-size: 40px /*!important*/;
+        margin: 30px /*!important*/;
+      }
+
+
+      div {
+        width: 100%;
+      }
+
+
+      .pie-section {
+        margin-left: 0;
+        margin-right: 0;
+
+        h2 {
+          margin-bottom: 30px /*!important*/;
+        }
+
+        .pie {
+          border-radius: 0%;
+          background-image: none;
+          position: static /*!important*/;
+          animation: none;
+          display: flex /*!important*/;
+          justify-content: space-around;
+          flex-wrap: wrap /*!important*/;
+          font-weight: bold;
+          line-height: 33px;
+          width: 100% /*!important*/;
+          margin-bottom: 50px;
+
+
+          &:hover .pie-lingue h3 {
+            transform: translateX(0%);
+          }
+
+          &:hover .pie-lingue ul {
+            transform: translateX(0%);
+          }
+
+
+          .pie-div {
+            width: 45% /*!important*/;
+            padding: 25px;
+            margin: 10px;
+            position: static;
+
+
+            h3 {
+              position: static /*!important*/;
+              font-size: 25px /*!important*/;
+              padding: 20px 0px 10px 0px;
+              border-bottom: 2px solid $beige;
+              margin: -25px -25px 25px -25px;
+              text-align: center;
+            }
+
+            ul {
+              margin-left: 10px;
+              position: static /*!important*/;
+              display: block /*!important*/;
+              font-size: 16px /*!important*/;
+
+            }
+          }
+
+          .pie-frontend {
+            color: $beige;
+            background-color: black;
+
+            ul {
+
+              li {
+                white-space: nowrap;
+
+                &::before {
+                  content:"";
+                  display: inline-block;
+                  background-image: url(../img/about/skills/arrow-beige.svg);
+                  width: 15px;
+                  height: 15px;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  margin-right: 5px;
+                  margin-left: -19.3px;
+                }
+              }
+            }
+          }
+
+          .pie-cms {
+            color: $darkred;
+            background-color: white;
+
+            ul {
+
+              li {
+                &::before {
+                  content:"";
+                  display: inline-block;
+                  background-image: url(../img/about/skills/arrow-darkred.svg);
+                  width: 15px;
+                  height: 15px;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  margin-right: 5px;
+                  margin-left: -19.3px;
+                }
+
+                .altervista {
+                  font-size: 17px /*!important*/;
+                }
+              }
+            }
+          }
+
+          .pie-lingue {
+            color: white;
+            background-color: $darkred;
+            position: static;
+
+
+            h3 {
+              transform: translateX(0%);
+            }
+
+            ul {
+              transform: translateX(0%);
+
+              li {
+                &::before {
+                  content:"";
+                  display: inline-block;
+                  background-image: url(../img/about/skills/arrow-white.svg);
+                  width: 15px;
+                  height: 15px;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  margin-right: 5px;
+                  margin-left: -19.3px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
+
+      .cosa-faccio-container {
+        width: 100%;
+
+        h2 {
+          text-align: center;
+          font-size: 40px;
+        }
+
+        ul {
+          margin: 50px;
+
+          li {
+            list-style-type: none;
+            font-family: "Poiret One", cursive;
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 50px;
+            text-align: center;
+
+            &::before {
+              content:"";
+              display: block;
+              width: 80px;
+              height: 80px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              margin: 15px auto;
+            }
+          }
+
+          .cosa-faccio-code::before {
+            background-image: url(../img/about/code.svg);
+          }
+
+          .cosa-faccio-editor::before {
+            background-image: url(../img/about/editor.svg);
+          }
+        }
+      }
+
+
+      .voglio-container {
+        position: static;
+        margin-left: 20px;
+
+        h2 {
+          font-size: 30px /*!important*/;
+        }
+
+        ul {
+          margin: 20px 20px 20px 70px;
+
+          li {
+            font-size: 20px;
+          }
+        }
+      }
+
+
+      .adoro-container {
+        margin-left: 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+
+
+        h2 {
+          font-size: 30px /*!important*/;
+        }
+
+        ul {
+          margin: 20px 20px 20px 70px;
+
+          li {
+            font-size: 20px;
+          }
+        }
+      }
+
+
+      .sudime-container {
+        h2 {
+          font-size: 30px /*!important*/;
+        }
+
+        ul {
+
+          li {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .about-section {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+  .pie-section {
+
+
+    .pie {
+      width: 100% /*!important*/;
+
+      .pie-div {
+        width: 100% /*!important*/;
+      }
+    }
+  }
 }

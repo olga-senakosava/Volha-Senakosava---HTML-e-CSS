@@ -90,5 +90,84 @@ body {
       }
     }
   }
+}
 
+
+
+
+@media screen and (max-width: 750px) {
+  .contattami-section {
+
+    h2 {
+      font-size: 45px;
+    }
+
+    .contattami-div {
+
+      .email-div {
+        margin: 40px auto;
+
+        a {
+          font-size: 30px;
+        }
+      }
+
+      .social-div {
+
+        ul {
+          li {
+            margin: 1.5vw;
+
+            a {
+              img {
+                width: 40px;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .contattami-section {
+
+    h2 {
+      font-size: 40px /*!important*/;
+    }
+
+
+    .contattami-div {
+      .email-div {
+        margin-bottom: 70px;
+
+        a {
+          font-size: 10vw /*!important*/;
+          white-space: pre-wrap /*!important*/;
+        }
+      }
+
+      .social-div {
+
+        ul {
+          li {
+            margin: 1.5vw;
+
+            a {
+              img {
+                width: 40px;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -428,3 +428,170 @@ body {
     }
   }
 }
+
+
+
+@media screen and (max-width: 940px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+    .menu-span {
+
+            .burger {
+              display: block /*!important*/;
+
+            }
+
+
+      .menu-normal.show {
+        display: flex /*!important*/;
+      }
+
+
+      .menu-normal {
+        display: none /*!important*/;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        position: fixed;
+        top: 36.5% /*!important*/;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 50%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        border-top: 1px solid $beige;
+
+
+
+          a {
+            width: 100%;
+            text-align: center;
+            font-size: 30px /*!important*/;
+            padding: 30px 0 /*!important*/;
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {
+  .home-intro {
+    text-align: center /*!important*/;      /* Ho dovuto mettere così tanti !important, altrimenti queste cose proprio non funzionano. */
+
+
+    .home-text-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 30px;
+      margin-top: 50px;
+
+      .description {
+        border-left: 2px solid transparent /*!important*/;
+        border-top: 2px solid $beige /*!important*/;
+        margin-top: 50px;
+        margin-left: 0 /*!important*/;
+        width: 100% /*!important*/;
+        font-size: 25px /*!important*/;
+        animation: introPhrasesMobileAppear 2.3s;
+
+
+        .p1 {
+          animation: pMobileAppear 2.3s /*!important*/;
+        }
+
+        .p2 {
+          animation: pMobileAppear 2.5s /*!important*/;
+        }
+
+        .p3 {
+          animation: pMobileAppear 2.7s /*!important*/;
+        }
+
+      }
+
+
+      .logo-letter-container {
+        margin-left: 40px /*!important*/;
+      }
+    }
+
+    .home-button-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      .home-button {
+        margin-top: -20px /*!important*/;
+
+
+        a {
+          font-size: 25px;
+          font-family: "Megrim", cursive;
+          padding: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+  .home-intro {
+    position: fixed;
+    top: 50% /*!important*/;
+
+
+    .home-text-container {
+
+      .description {
+        margin-bottom: 50px /*!important*/;
+      }
+    }
+  }
+
+
+
+  .home-content {
+    .portfolio-container {
+      display: none;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .social-span {
+    margin-left: 5px;
+
+
+    ul {
+
+      li {
+        padding: 0px /*!important*/;
+
+        a {
+
+          img {
+            width:25px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

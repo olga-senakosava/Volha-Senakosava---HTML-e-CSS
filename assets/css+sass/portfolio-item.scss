@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import "_partials.scss";
-@import "media.scss";
 
 
 * {
@@ -163,6 +162,241 @@ body {
         border: 1.5px solid $darkred;
         padding: 0;
 
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 940px) {
+  .portfolio-item-section {
+
+    .portfolio-item-div {
+      margin: 100px 0px;
+
+      .portfolio-item-intro {
+        flex-wrap: nowrap;
+
+
+        div {
+          margin-top: 0;
+
+          h3 {
+            font-size: 37px /*!important*/;
+          }
+
+          p {
+            font-size: 25px /*!important*/;
+          }
+        }
+
+
+        .portfolio-item-button {
+          button {
+
+            a {
+              font-size: 25px;
+              padding: 40px;
+
+              &:hover {
+                background-size: 120px;
+              }
+            }
+          }
+        }
+      }
+
+      .portfolio-item-description {
+        font-size: 25px;
+        margin: 70px auto /*!important*/;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+  .portfolio-item-section {
+
+    .portfolio-item-div {
+      margin: 50px 0px /*!important*/;
+
+      .portfolio-item-intro {
+        flex-wrap: wrap /*!important*/;
+        align-items: center;
+
+        .cose-div, .strumenti-div {
+          border-left: none /*!important*/;
+          width: 50%;
+
+          &::before {
+            content:'';
+            display: inline-block;
+            border-left: 3px solid $darkred;
+            border-top: 3px solid $darkred;
+            padding: 17px;
+            margin-left: -30px;
+
+            transform: scaleX(1);
+            transform-origin:  -50% 50%;
+          }
+
+          &::after {
+            display: none /*!important*/;
+          }
+        }
+
+        .portfolio-item-button {
+          display: flex;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 50px;
+          text-align: center;
+          width: 100%;
+
+          button {
+            margin: 70px auto /*!important*/;
+
+            a {
+              padding: 40px /*!important*/;
+
+              &:hover {
+                background-size: 120px /*!important*/;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+  .portfolio-item-section {
+
+    h2 {
+      font-size: 40px /*!important*/;
+    }
+
+
+    .portfolio-item-div {
+
+      .portfolio-item-intro {
+        justify-content: center /*!important*/;
+        align-items: center /*!important*/;
+
+
+        div {
+          h3 {
+            font-size: 37px /*!important*/;
+          }
+
+          p {
+            font-size: 20px /*!important*/;
+          }
+        }
+
+        .cose-div, .strumenti-div {
+          width: 49% /*!important*/;
+
+          &::before {
+            border-left: 3px solid $darkred;
+            border-top: 3px solid $darkred;
+            padding: 17px;
+            margin-left: -30px;
+
+            transform: scaleX(1);
+            transform-origin:  -50% 50%;
+          }
+        }
+      }
+
+
+      .portfolio-item-description {
+        p {
+          font-size: 20px /*!important*/;
+          margin: 50px 10px /*!important*/;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .portfolio-item-section {
+
+    h2 {
+      font-size: 40px /*!important*/;
+      margin-bottom: 20px /*!important*/;
+    }
+
+    .portfolio-item-div {
+      margin: 30px auto 15px auto /*!important*/;
+
+
+      .portfolio-item-intro {
+        display: flex /*!important*/;
+        display: flex;
+        justify-content: center /*!important*/;
+        margin: 0 auto /*!important*/;
+
+        div {
+
+          h3 {
+            font-size: 35px /*!important*/;
+          }
+
+          p {
+            font-size: 20px /*!important*/;
+          }
+        }
+
+        .cose-div, .strumenti-div {
+          padding: 0;
+          width: 100% /*!important*/;
+        }
+
+
+        .portfolio-item-button {
+
+          button {
+            a {
+              padding: 30px;
+
+              &:hover {
+                background-size: 80px;
+              }
+            }
+          }
+        }
+      }
+
+      .portfolio-item-description {
+        width: 100%;
+        margin: 0 auto /*!important*/;
+
+        p {
+          width: 90%;
+          font-size: 20px /*!important*/;
+        }
+      }
+
+
+      .portfolio-item-screen {
+        padding: 10px 0 /*!important*/;
       }
     }
   }
