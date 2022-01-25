@@ -401,9 +401,7 @@ body {
         .cosa-faccio-editor::before {
           background-image: url(../img/about/editor.svg);
         }
-
       }
-
     }
 
 
@@ -415,7 +413,6 @@ body {
       border-left: 2px solid black;
 
 
-
       h2 {
         padding: 10px;
         color: $beige;
@@ -425,8 +422,6 @@ body {
 
       ul {
         margin: 50px 50px 50px 70px;
-
-
 
         li {
           list-style-type: none;
@@ -567,11 +562,11 @@ body {
 @media only screen and (max-width: 1050px) {
   .about-main-div {
     display: flex;
-    flex-wrap: wrap /*!important*/;
+    flex-wrap: wrap !important;
     width: 100%;
 
     div {
-      width: 100% /*!important*/;
+      width: 100% !important;
     }
 
     .aboutme-container {
@@ -583,7 +578,7 @@ body {
     }
 
     .pie {
-      width: 500px /*!important*/;
+      width: 500px !important;
     }
 
 
@@ -646,11 +641,11 @@ body {
     .about-ciao {
 
       .main-title {
-        font-size: 40px /*!important*/;
+        font-size: 40px !important;
       }
 
       .main-p {
-        font-size: 20px /*!important*/;
+        font-size: 20px !important;
         margin: 50px 0px;
       }
     }
@@ -662,8 +657,8 @@ body {
       justify-content: center;
 
       h2 {
-        font-size: 40px /*!important*/;
-        margin: 30px /*!important*/;
+        font-size: 40px !important;
+        margin: 30px !important;
       }
 
 
@@ -677,20 +672,20 @@ body {
         margin-right: 0;
 
         h2 {
-          margin-bottom: 30px /*!important*/;
+          margin-bottom: 30px !important;
         }
 
         .pie {
           border-radius: 0%;
           background-image: none;
-          position: static /*!important*/;
+          position: static !important;
           animation: none;
-          display: flex /*!important*/;
+          display: flex !important;
           justify-content: space-around;
-          flex-wrap: wrap /*!important*/;
+          flex-wrap: wrap !important;
           font-weight: bold;
           line-height: 33px;
-          width: 100% /*!important*/;
+          width: 100% !important;
           margin-bottom: 50px;
 
 
@@ -704,15 +699,15 @@ body {
 
 
           .pie-div {
-            width: 45% /*!important*/;
+            width: 45% !important;
             padding: 25px;
             margin: 10px;
             position: static;
 
 
             h3 {
-              position: static /*!important*/;
-              font-size: 25px /*!important*/;
+              position: static !important;
+              font-size: 25px !important;
               padding: 20px 0px 10px 0px;
               border-bottom: 2px solid $beige;
               margin: -25px -25px 25px -25px;
@@ -721,9 +716,9 @@ body {
 
             ul {
               margin-left: 10px;
-              position: static /*!important*/;
-              display: block /*!important*/;
-              font-size: 16px /*!important*/;
+              position: static !important;
+              display: block !important;
+              font-size: 16px !important;
 
             }
           }
@@ -772,7 +767,7 @@ body {
                 }
 
                 .altervista {
-                  font-size: 17px /*!important*/;
+                  font-size: 17px !important;
                 }
               }
             }
@@ -859,7 +854,7 @@ body {
         margin-left: 20px;
 
         h2 {
-          font-size: 30px /*!important*/;
+          font-size: 30px !important;
         }
 
         ul {
@@ -879,7 +874,7 @@ body {
 
 
         h2 {
-          font-size: 30px /*!important*/;
+          font-size: 30px !important;
         }
 
         ul {
@@ -894,7 +889,7 @@ body {
 
       .sudime-container {
         h2 {
-          font-size: 30px /*!important*/;
+          font-size: 30px !important;
         }
 
         ul {
@@ -924,10 +919,10 @@ body {
 
 
     .pie {
-      width: 100% /*!important*/;
+      width: 100% !important;
 
       .pie-div {
-        width: 100% /*!important*/;
+        width: 100% !important;
       }
     }
   }
