@@ -12,6 +12,8 @@
 body {
   background-color: $beige;
   font-family: "Poiret One", cursive;
+  font-weight: bold;
+
 }
 
 .home-navigation {
@@ -25,7 +27,6 @@ body {
 
   h2 {
     font-size: 70px;
-    font-weight: bold;
     text-align: center;
     animation: pItemTitleAppear 0.5s;
   }
@@ -49,14 +50,12 @@ body {
         margin-top: 0;
 
         h3 {
-          font-weight: bold;
           font-size: 50px;
           margin-bottom: 15px;
         }
 
         p {
           font-size: 30px;
-          font-weight: bold;
         }
 
       }
@@ -335,7 +334,6 @@ body {
         p {
           font-size: 25px !important;
           margin: 50px 10px !important;
-          font-weight: bold;
         }
       }
     }
