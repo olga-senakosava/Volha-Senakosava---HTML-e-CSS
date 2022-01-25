@@ -447,15 +447,16 @@ body {
 
 
       #menu-normal.show {
-        -webkit-transition: all 0.5s !important;
-        -moz-transition: all 0.5s !important;
-        -ms-transition: all 0.5s !important;
-        -o-transition: all 0.5s !important;
-        transition: all 0.5s !important;
+        -webkit-transition: all 0.9s !important;
+        -moz-transition: all 0.9s !important;
+        -ms-transition: all 0.9s !important;
+        -o-transition: all 0.9s !important;
+        transition: all 0.9s !important;
         opacity: 1;
         z-index: 9999;
         height: 50%;
         width: 100%;
+        top: 36.5% !important;
       }
 
 
@@ -465,19 +466,21 @@ body {
         flex-wrap: wrap;
         align-items: center;
         position: fixed;
-        top: 36.5% !important;
+        top: -200% !important;
         left: 50%;
         transform: translate(-50%,-50%);
-        height: 100%;
-        width: 200%;
+        width: 0;
+        height: 0;
+        /*height: 200%;
+        width: 200%;*/
     /*    margin-top: -500px !important; */
         background-color: rgba(0,0,0,0.9);
         border-top: 1px solid $beige;
-        -webkit-transition: all 0.5s !important;
-        -moz-transition: all 0.5s !important;
-        -ms-transition: all 0.5s !important;
-        -o-transition: all 0.5s !important;
-        transition: all 0.5s !important;
+        -webkit-transition: all 0.9s !important;
+        -moz-transition: all 0.9s !important;
+        -ms-transition: all 0.9s !important;
+        -o-transition: all 0.9s !important;
+        transition: all 0.9s !important;
         opacity: 0;
         z-index: -999;
 
