@@ -442,18 +442,17 @@ body {
     .menu-span {
 
             .burger {
-              display: block /*!important*/;
-
+              display: block !important;
             }
 
 
       .menu-normal.show {
-        display: flex /*!important*/;
+        display: flex !important;
       }
 
 
       .menu-normal {
-        display: none /*!important*/;
+        display: none !important;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
@@ -485,7 +484,7 @@ body {
 
 @media screen and (max-width: 750px) {
   .home-intro {
-    text-align: center /*!important*/;      /* Ho dovuto mettere così tanti !important, altrimenti queste cose proprio non funzionano. */
+    text-align: center /*!important*/;
 
 
     .home-text-container {
