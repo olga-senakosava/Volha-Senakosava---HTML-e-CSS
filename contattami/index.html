@@ -10,6 +10,15 @@
   <link rel="stylesheet" href="../assets/css+sass/contattami.css">
   <link rel="stylesheet" href="../assets/css+sass/media.css">
   <script type="text/javascript" src="../assets/js/index.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+
+  (function() {
+      emailjs.init("user_KXZpUOuOVTYst6eRyEZZU");
+  })();
+</script>
 </head>
 
 <body>
@@ -58,10 +67,37 @@
 
     <div class="contattami-div">
 
+      <form class="form" id="contact-form" method="post">
+
+        <input type="hidden" name="contact_number">
+
+
+        <div class='form-row form-name'>
+          <label class="label" for='full-name'>Nome e Cognome</label> <br> <br>
+          <input id='to_name' name='to_name' type='text'/>
+       </div>
+
+       <div class="form-row form-email">
+         <label class="label" for="email">Email</label> <br> <br>
+         <input type="email" id="from_name" name="from_name" placeholder="esempio@email.com">
+       </div>
+
+       <div class="form-row form-messaggio">
+         <label class="label" for="messaggio">Messaggio</label> <br> <br>
+         <textarea name="message" id="message"></textarea>
+       </div>
+
+       <div class="form-row form-bottone">
+         <input id="submit" class="submit" type="submit" name="Send" value="Send" >
+       </div>
+
+     </form>
+
+
     <!--    <div class="email-div">
           <a href="mailto:senakosava.olga@gmail.com">senakosava.olga
 @gmail.com</a>
-</div> -->
+</div>
 
         <div class="social-div">
           <ul>
@@ -73,33 +109,10 @@
             </a></li>
           </ul>
 
-        </div>
+        </div>  -->
     </div>
 
 
-  <!--  <form class="form" action="mailto:senakosava.olga@gmail.com" method="post">
-
-      <div class='form-row form-name'>
-        <label class="label" for='full-name'>Nome e Cognome</label> <br> <br>
-        <input id='full-name' name='full-name' type='text'/>
-     </div>
-
-     <div class="form-row form-email">
-       <label class="label" for="email">Email</label> <br> <br>
-       <input type="email" name="email" placeholder="esempio@email.com">
-     </div>
-
-     <div class="form-row form-messaggio">
-       <label class="label" for="messaggio">Messaggio</label> <br> <br>
-       <textarea name="messaggio"></textarea>
-     </div>
-
-     <div class="form-row form-bottone">
-       <button type="button" name="button">Invia</button>
-       <input type="submit" name="Invia" value="Invia">
-     </div>
-
-   </form>  -->
   </section>
 
 </body>
