@@ -73,23 +73,27 @@
 
 
         <div class='form-row form-name'>
-          <label class="label" for='full-name'>Nome e Cognome</label> <br> <br>
-          <input id='to_name' name='to_name' type='text'/>
+          <label class="label" for='full-name' title="Questo campo è obbligatorio">Nome e Cognome*</label> <br> <br>
+          <input class="input" id='to_name' name='to_name' type='text' required/>
        </div>
 
        <div class="form-row form-email">
-         <label class="label" for="email">Email</label> <br> <br>
-         <input type="email" id="from_name" name="from_name" placeholder="esempio@email.com">
+         <label class="label" for="email" title="Questo campo è obbligatorio">Email*</label> <br> <br>
+         <input class="input" type="email" id="from_name" name="from_name" placeholder="esempio@email.com" required>
        </div>
 
        <div class="form-row form-messaggio">
-         <label class="label" for="messaggio">Messaggio</label> <br> <br>
-         <textarea name="message" id="message"></textarea>
+         <label class="label" for="messaggio" title="Questo campo è obbligatorio">Messaggio*</label> <br> <br>
+         <textarea class="input" name="message" id="message" required></textarea>
        </div>
 
        <div class="form-row form-bottone">
          <input id="submit" class="submit" type="submit" name="Send" value="Send" >
+         <p class="form-feedback" id="success">Grazie! La tua mail è stata inviata.</p>
+         <p class="form-feedback" id="failure">Oh no, qualcosa è andato storto.</p>
+
        </div>
+
 
      </form>
 

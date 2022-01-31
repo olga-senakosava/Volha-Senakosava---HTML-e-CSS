@@ -21,7 +21,7 @@ body {
 
 
 .contattami-section {
-  margin: 130px auto 0px auto;
+  margin: 180px auto 0px auto;
   animation: contattamiAppear 1.5s;
 
   h2 {
@@ -43,12 +43,13 @@ body {
       .form-row {
 
 
+
         .label {
           font-weight: bold;
           font-size: 30px;
         }
 
-        input, textarea {
+        .input {
           margin: 0 auto 30px auto;
           padding: 10px;
           font-size: 20px;
@@ -80,6 +81,7 @@ body {
         .submit {
           width: 50%;
           border-radius: 0%;
+          border: none;
           margin: 30px auto;
           padding: 30px;
           color: $beige;
@@ -96,6 +98,7 @@ body {
           cursor: pointer;
 
 
+
             &:hover {
               background-image: url('../../assets/img/contattami/mailsend.svg');
               background-size: contain;
@@ -107,9 +110,31 @@ body {
               color: transparent;
               transition: all 0.3s;
             }
-
-
         }
+
+        .form-feedback {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        #success, #failure {
+          display: none;
+          animation: formFeedbackAppear 1s;
+        }
+
+        @keyframes formFeedbackAppear {
+          from {
+            opacity: 0;
+            margin-right: -50px;
+          }
+
+          to {
+            opacity: 1;
+            margin-right: 0px;
+          }
+        }
+
       }
     }
   }
@@ -122,33 +147,14 @@ body {
   .contattami-section {
 
     h2 {
-      font-size: 50px;
+      font-size: 60px;
     }
 
     .contattami-div {
 
-      .email-div {
-        margin: 40px auto;
+      .form {
+        width: 90% !important;
 
-        a {
-          font-size: 30px;
-        }
-      }
-
-      .social-div {
-
-        ul {
-          li {
-            margin: 1.5vw;
-
-            a {
-              img {
-                width: 40px;
-                height: auto;
-              }
-            }
-          }
-        }
       }
     }
   }
@@ -158,100 +164,27 @@ body {
 
 
 
+@media screen and (max-width: 600px) {
+
+  h2 {
+    font-size: 40px !important;
+  }
 
 
-/*  .email-div {
-    margin: 50px auto;
-    text-align: center;
+  .form {
 
-    a {
-      text-decoration: none;
-      color: $darkred;
-      font-size: 50px;
-      font-weight: bold;
+    .form-row {
 
 
-      &::after {
-        display: block;
-        content:"";
-        border-bottom: 2px solid $darkred;
-        transform: scaleX(0);
-
-        transition: transform 250ms ease-in-out;
-        transform-origin:  50% 0%;
-        padding-top: 5px;
+      .label {
+        font-weight: bold;
+        font-size: 20px !important;
       }
 
-      &:hover {
-        border-color: $darkred;
-
-        &::after {
-          transform: scaleX(1);
-        }
+      .form-feedback {
+        font-size: 15px !important;
       }
-
-
-
     }
   }
 
-  .social-div {
-    text-align: center;
-
-    ul {
-      li {
-        display: inline-block;
-        margin: 20px;
-
-        a {
-          text-decoration: none;
-
-          img {
-            width: 70px;
-            height: auto;
-          }
-
-        }
-      }
-    }
-  }*/
-
-
-
-
-
-
-
-
-@media screen and (max-width: 500px) {
-  .contattami-section {
-
-
-    .contattami-div {
-      .email-div {
-        margin-bottom: 70px;
-
-        a {
-          font-size: 9vw !important;
-          white-space: pre-wrap !important;
-        }
-      }
-
-      .social-div {
-
-        ul {
-          li {
-            margin: 1.5vw;
-
-            a {
-              img {
-                width: 40px;
-                height: auto;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }

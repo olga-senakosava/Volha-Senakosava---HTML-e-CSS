@@ -33,8 +33,11 @@
                emailjs.sendForm('gmailOlga', 'defaultTemplate', this)
                    .then(function() {
                        console.log('SUCCESS!');
+                       document.getElementById('success').style.display="block";
                    }, function(error) {
                        console.log('FAILED...', error);
+                       document.getElementById('failure').style.display="block";
+
                    });
            });
        }
