@@ -432,6 +432,11 @@ body {
 
 
 @media screen and (max-width: 940px) {
+  .navigation-section {
+    z-index: 19000 !important;
+  }
+
+
   nav {
     position: fixed;
     top: 0;
@@ -472,7 +477,7 @@ body {
         width: 100%;
         height: 50%;
         background-color: rgba(0,0,0,0.9);
-        border-top: 1px solid $beige;
+      /*  border-top: 1px solid $beige;*/
         -webkit-transition: all 1.1s !important;
         -moz-transition: all 1.1s !important;
         -ms-transition: all 1.1s !important;
