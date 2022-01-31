@@ -23,7 +23,7 @@ body {
 .about-section {
   margin: 130px 70px 100px 70px;
 
-  .about-ciao {
+  .about-hi {
     margin-bottom: 50px;
     text-align: center;
 
@@ -65,7 +65,7 @@ body {
       text-align: center;
       margin: 50px 0;
       display: inline;
-      animation: aboutCiaoTitleAppear 0.5s;
+      animation: aboutHiTitleAppear 0.5s;
 
     }
 
@@ -240,13 +240,13 @@ body {
         }
 
 
-        &:hover .pie-lingue h3 {
+        &:hover .pie-languages h3 {
           bottom: 27%;
           left: 50%;
           transform: translateX(-50%);
         }
 
-        &:hover .pie-lingue ul {
+        &:hover .pie-languages ul {
           display: block;
           font-size: 20px;
           font-weight: bold;
@@ -338,7 +338,7 @@ body {
           }
         }
 
-        .pie-lingue {
+        .pie-languages {
           color: white;
 
           h3 {
@@ -363,7 +363,7 @@ body {
 
 
 
-    .cosa-faccio-container {
+    .what-i-do-container {
       width: 100%;
 
       h2 {
@@ -394,11 +394,11 @@ body {
 
         }
 
-        .cosa-faccio-code::before {
+        .what-i-do-code::before {
           background-image: url(../img/about/code.svg);
         }
 
-        .cosa-faccio-editor::before {
+        .what-i-do-editor::before {
           background-image: url(../img/about/editor.svg);
         }
       }
@@ -407,7 +407,7 @@ body {
 
 
 
-    .voglio-container {
+    .what-i-want-container {
       width: 40%;
       margin-top: 100px;
       border-left: 2px solid black;
@@ -448,7 +448,7 @@ body {
     }
 
 
-    .adoro-container {
+    .what-i-love-container {
       width: 40%;
       margin-top: 100px;
       border-left: 2px solid $darkred;
@@ -489,19 +489,8 @@ body {
     }
 
 
-    .sudime-container {
+    .bio-container {
       width: 70%;
-
-  /*    & h2 {
-        transition: all 0.3s;
-      }
-
-      &:hover h2 {
-        font-size: 50px;
-        margin: 38.5px;
-      } */
-
-
 
       h2 {
         text-align: center;
@@ -582,7 +571,7 @@ body {
     }
 
 
-    .cosa-faccio-container {
+    .what-i-do-container {
       margin: 0 auto;
 
       h2 {
@@ -614,17 +603,17 @@ body {
     }
 
 
-    .voglio-container {
+    .what-i-want-container {
       width: 100%;
     }
 
 
-    .adoro-container {
+    .what-i-love-container {
       width: 100%;
     }
 
 
-    .sudime-container {
+    .bio-container {
       width: 100%;
     }
   }
@@ -638,7 +627,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    .about-ciao {
+    .about-hi {
 
       .main-title {
         font-size: 40px !important;
@@ -689,11 +678,11 @@ body {
           margin-bottom: 50px;
 
 
-          &:hover .pie-lingue h3 {
+          &:hover .pie-languages h3 {
             transform: translateX(0%);
           }
 
-          &:hover .pie-lingue ul {
+          &:hover .pie-languages ul {
             transform: translateX(0%);
           }
 
@@ -773,7 +762,7 @@ body {
             }
           }
 
-          .pie-lingue {
+          .pie-languages {
             color: white;
             background-color: $darkred;
             position: static;
@@ -807,7 +796,7 @@ body {
 
 
 
-      .cosa-faccio-container {
+      .what-i-do-container {
         width: 100%;
 
         h2 {
@@ -837,18 +826,18 @@ body {
             }
           }
 
-          .cosa-faccio-code::before {
+          .what-i-do-code::before {
             background-image: url(../img/about/code.svg);
           }
 
-          .cosa-faccio-editor::before {
+          .what-i-do-editor::before {
             background-image: url(../img/about/editor.svg);
           }
         }
       }
 
 
-      .voglio-container {
+      .what-i-want-container {
         position: static;
         margin-left: 20px;
 
@@ -866,7 +855,7 @@ body {
       }
 
 
-      .adoro-container {
+      .what-i-love-container {
         margin-left: 20px;
         margin-bottom: 50px;
         margin-top: 30px;
@@ -886,7 +875,7 @@ body {
       }
 
 
-      .sudime-container {
+      .bio-container {
         h2 {
           font-size: 45px !important;
         }
@@ -941,7 +930,7 @@ body {
   }
 
 
-  .voglio-container {
+  .what-i-want-container {
     margin-top: 400px !important;
   }
 

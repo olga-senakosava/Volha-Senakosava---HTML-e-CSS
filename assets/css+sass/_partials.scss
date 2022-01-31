@@ -382,26 +382,6 @@ $beige: #EFD6AC;
 
 
 
-
-
-  /*    @keyframes imgAboutAppear {
-        0% {
-          opacity: 0;
-          margin-right: -300px;
-        }
-
-        50% {
-          opacity: 0;
-          margin-right: -300px;
-        }
-
-        100% {
-          opacity: 1;
-          margin-right: 0;
-        }
-      }*/
-
-
       @keyframes bDelay {
         0% {
           position: fixed;
@@ -421,7 +401,6 @@ $beige: #EFD6AC;
           position: fixed;
 
         }
-
 
 
         100% {
@@ -486,7 +465,7 @@ $beige: #EFD6AC;
 
 
 
-      @keyframes aboutCiaoTitleAppear {
+      @keyframes aboutHiTitleAppear {
         0% {
           opacity: 0;
           font-size: 0;
@@ -541,6 +520,8 @@ $beige: #EFD6AC;
           margin-top: 0px;
         }
       }
+
+      
 
       @keyframes pieBorder {
         0% {
@@ -657,7 +638,7 @@ $beige: #EFD6AC;
      /*  Contattami  */
 
 
-     @keyframes contattamiAppear {
+     @keyframes contactAppear {
        0% {
          opacity: 0;
          margin-left: -500px;

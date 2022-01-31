@@ -20,9 +20,9 @@ body {
 }
 
 
-.contattami-section {
+.contact-section {
   margin: 180px auto 0px auto;
-  animation: contattamiAppear 1.5s;
+  animation: contactAppear 1.5s;
 
   h2 {
     font-size: 80px;
@@ -31,7 +31,7 @@ body {
   }
 
 
-  .contattami-div {
+  .contact-div {
     margin: 100px auto;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ body {
 
 
             &:hover {
-              background-image: url('../../assets/img/contattami/mailsend.svg');
+              background-image: url('../../assets/img/contact/mailsend.svg');
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
@@ -131,13 +131,13 @@ body {
 
 
 @media screen and (max-width: 750px) {
-  .contattami-section {
+  .contact-section {
 
     h2 {
       font-size: 60px;
     }
 
-    .contattami-div {
+    .contact-div {
 
       .form {
         width: 90% !important;
