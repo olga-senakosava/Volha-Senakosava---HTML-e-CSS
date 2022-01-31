@@ -440,10 +440,13 @@ $beige: #EFD6AC;
           border-radius: 0%;
           height: 0;
           width: 0px;
+          object-fit: cover;
+          background-color: black;
         }
 
         30% {
           width: 200px;
+          object-fit: cover;
 
         }
 
@@ -451,6 +454,7 @@ $beige: #EFD6AC;
         70% {
           height: 0;
           border-radius: 0%;
+          object-fit: cover;
 
         }
 
@@ -458,6 +462,8 @@ $beige: #EFD6AC;
           height: 200px;
           border-radius: 100%;
           border-right: 1px solid black;
+          object-fit: cover;
+          background-color: $beige;
 
         }
       }
@@ -521,7 +527,7 @@ $beige: #EFD6AC;
         }
       }
 
-      
+
 
       @keyframes pieBorder {
         0% {
