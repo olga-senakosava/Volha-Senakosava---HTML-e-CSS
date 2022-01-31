@@ -417,7 +417,7 @@ body {
         padding: 10px;
         color: $beige;
         background-color: black;
-
+        font-size: 50px;
       }
 
       ul {
@@ -916,13 +916,33 @@ body {
 
   .pie-section {
 
-
     .pie {
       width: 100% !important;
 
-      .pie-div {
+      .pie-div{
         width: 100% !important;
+      }
+
+      .pie-frontend {
       }
     }
   }
+}
+
+
+@media screen and (max-width: 412px) {
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  li {
+    white-space: normal !important;
+  }
+
+
+  .voglio-container {
+    margin-top: 400px !important;
+  }
+
 }

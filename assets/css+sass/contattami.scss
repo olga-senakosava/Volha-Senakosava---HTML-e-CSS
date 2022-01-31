@@ -122,19 +122,6 @@ body {
           display: none;
           animation: formFeedbackAppear 1s;
         }
-
-        @keyframes formFeedbackAppear {
-          from {
-            opacity: 0;
-            margin-right: -50px;
-          }
-
-          to {
-            opacity: 1;
-            margin-right: 0px;
-          }
-        }
-
       }
     }
   }
