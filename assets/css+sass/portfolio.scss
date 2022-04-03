@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 
 
 
@@ -78,6 +80,38 @@ body {
           text-align: center;
           margin: 0 auto;
           color: $beige;
+        }
+      }
+
+
+      .drinkscounter {
+        background-image: url(../../assets/img/portfolio/drinkscounter-square.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        box-shadow: inset 0 0 0 0 rgba(0,0,0,0.7);
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.3s;
+        animation: portfolioItemAppear 0.5s;
+
+
+        & h3 {
+          font-family: 'VT323', monospace;
+          font-weight: normal;
+          font-size: 58px;
+          color: transparent;
+          transition: all 0.4s;
+        }
+
+        &:hover {
+          box-shadow: inset 0 -500px 0 0 rgba(0,0,0,0.9);
+          background-size: 120%;
+
+
+          & h3 {
+            color: $beige;
+          }
         }
       }
 
