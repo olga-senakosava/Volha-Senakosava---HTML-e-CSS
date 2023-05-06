@@ -29,11 +29,19 @@ body {
 
 
 .home-navigation {
+  -webkit-animation: menuAppear 0.8s;
+  -moz-animation: menuAppear 0.8s;
+  -ms-animation: menuAppear 0.8s;
+  -o-animation: menuAppear 0.8s;          
   animation: menuAppear 0.8s;
 }
 
 .portfolio-section {
   margin: 150px 0px 30px 0px;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;          
   animation: none;
 
 
@@ -44,6 +52,10 @@ body {
       text-align: center;
       color: black;
       margin: 220px auto 50px auto;
+      -webkit-animation: portfolioAppear linear 1s;
+      -moz-animation: portfolioAppear linear 1s;
+      -ms-animation: portfolioAppear linear 1s;
+      -o-animation: portfolioAppear linear 1s;          
       animation: portfolioAppear linear 1s;
 
     }
@@ -54,6 +66,10 @@ body {
       text-align: center;
       color: black;
       margin: 0px auto 150px auto;
+      -webkit-animation: portfolioAppear linear 1s;
+      -moz-animation: portfolioAppear linear 1s;
+      -ms-animation: portfolioAppear linear 1s;
+      -o-animation: portfolioAppear linear 1s;          
       animation: portfolioAppear linear 1s;
     }
 
@@ -93,6 +109,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 0.5s;
+        -moz-animation: portfolioItemAppear 0.5s;
+        -ms-animation: portfolioItemAppear 0.5s;
+        -o-animation: portfolioItemAppear 0.5s;            
         animation: portfolioItemAppear 0.5s;
 
 
@@ -127,6 +147,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 1s;
+        -moz-animation: portfolioItemAppear 1s;
+        -ms-animation: portfolioItemAppear 1s;
+        -o-animation: portfolioItemAppear 1s;            
         animation: portfolioItemAppear 1s;
 
 
@@ -162,6 +186,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 1.5s;
+        -moz-animation: portfolioItemAppear 1.5s;
+        -ms-animation: portfolioItemAppear 1.5s;
+        -o-animation: portfolioItemAppear 1.5s;            
         animation: portfolioItemAppear 1.5s;
 
 
@@ -197,6 +225,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 2s;
+        -moz-animation: portfolioItemAppear 2s;
+        -ms-animation: portfolioItemAppear 2s;
+        -o-animation: portfolioItemAppear 2s;            
         animation: portfolioItemAppear 2s;
 
 
@@ -241,6 +273,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 2.5s;
+        -moz-animation: portfolioItemAppear 2.5s;
+        -ms-animation: portfolioItemAppear 2.5s;
+        -o-animation: portfolioItemAppear 2.5s;            
         animation: portfolioItemAppear 2.5s;
 
 
@@ -281,6 +317,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 3s;
+        -moz-animation: portfolioItemAppear 3s;
+        -ms-animation: portfolioItemAppear 3s;
+        -o-animation: portfolioItemAppear 3s;            
         animation: portfolioItemAppear 3s;
 
 
@@ -320,6 +360,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 3.5s;
+        -moz-animation: portfolioItemAppear 3.5s;
+        -ms-animation: portfolioItemAppear 3.5s;
+        -o-animation: portfolioItemAppear 3.5s;            
         animation: portfolioItemAppear 3.5s;
 
 
@@ -361,6 +405,10 @@ body {
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.3s;
+        -webkit-animation: portfolioItemAppear 4s;
+        -moz-animation: portfolioItemAppear 4s;
+        -ms-animation: portfolioItemAppear 4s;
+        -o-animation: portfolioItemAppear 4s;            
         animation: portfolioItemAppear 4s;
 
 

@@ -15,6 +15,10 @@ body {
 }
 
 .home-navigation {
+  -webkit-animation: menuAppear 1s;
+  -moz-animation: menuAppear 1s;
+  -ms-animation: menuAppear 1s;
+  -o-animation: menuAppear 1s;
   animation: menuAppear 1s;
 }
 
@@ -40,7 +44,10 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        -webkit-animation: aboutImageContainerDivAppear 1.5s;
+        -moz-animation: aboutImageContainerDivAppear 1.5s;
+        -ms-animation: aboutImageContainerDivAppear 1.5s;
+        -o-animation: aboutImageContainerDivAppear 1.5s;      
         animation: aboutImageContainerDivAppear 1.5s;
 
         img {
@@ -51,6 +58,10 @@ body {
           width: 200px;
           height: 200px;
           z-index: 99;
+          -webkit-animation: aboutImageAppear linear 1s;
+          -moz-animation: aboutImageAppear linear 1s;
+          -ms-animation: aboutImageAppear linear 1s;
+          -o-animation: aboutImageAppear linear 1s;        
           animation: aboutImageAppear linear 1s;
         }
 
@@ -65,6 +76,10 @@ body {
       text-align: center;
       margin: 50px 0;
       display: inline;
+      -webkit-animation: aboutHiTitleAppear 0.5s;
+      -moz-animation: aboutHiTitleAppear 0.5s;
+      -ms-animation: aboutHiTitleAppear 0.5s;
+      -o-animation: aboutHiTitleAppear 0.5s;    
       animation: aboutHiTitleAppear 0.5s;
 
     }
@@ -77,6 +92,10 @@ body {
       margin: 50px 10px;
       display: inline;
       letter-spacing: 0;
+      -webkit-animation: aboutPappear 2.5s;
+      -moz-animation: aboutPappear 2.5s;
+      -ms-animation: aboutPappear 2.5s;
+      -o-animation: aboutPappear 2.5s;    
       animation: aboutPappear 2.5s;
     }
 
@@ -90,26 +109,41 @@ body {
     width: 40px;
     height: 40px;
     margin: 30px auto;
+    -webkit-animation: menuAppear 1s;
+    -moz-animation: menuAppear 1s;
+    -ms-animation: menuAppear 1s;
+    -o-animation: menuAppear 1s;  
     animation: menuAppear 1s;
 
 
   }
 
   .arrow-move-1 {
+    -webkit-animation: arrowMove 1s infinite;
+    -moz-animation: arrowMove 1s infinite;
+    -ms-animation: arrowMove 1s infinite;
+    -o-animation: arrowMove 1s infinite;  
     animation: arrowMove 1s infinite;
   }
 
   .arrow-move-2 {
     margin-top: -45px;
+    -webkit-animation: arrowMove 1s infinite;
+    -moz-animation: arrowMove 1s infinite;
+    -ms-animation: arrowMove 1s infinite;
+    -o-animation: arrowMove 1s infinite;  
     animation: arrowMove 1s infinite;
     animation-delay: 0.1s;
   }
 
   .arrow-move-3 {
     margin-top: -45px;
+    -webkit-animation: arrowMove 1s infinite;
+    -moz-animation: arrowMove 1s infinite;
+    -ms-animation: arrowMove 1s infinite;
+    -o-animation: arrowMove 1s infinite;  
     animation: arrowMove 1s infinite;
     animation-delay: 0.2s;
-
   }
 
 
@@ -118,6 +152,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-animation: aboutMainAppear ease-out 1.5s;
+    -moz-animation: aboutMainAppear ease-out 1.5s;
+    -ms-animation: aboutMainAppear ease-out 1.5s;
+    -o-animation: aboutMainAppear ease-out 1.5s;  
     animation: aboutMainAppear ease-out 1.5s;
 
     h2 {
@@ -170,6 +208,10 @@ body {
 
         &:hover {
           border-radius: 0%;
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          -o-animation: none;        
           animation: none;
         }
 
@@ -668,6 +710,10 @@ body {
           border-radius: 0%;
           background-image: none;
           position: static !important;
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          -o-animation: none;        
           animation: none;
           display: flex !important;
           justify-content: space-around;

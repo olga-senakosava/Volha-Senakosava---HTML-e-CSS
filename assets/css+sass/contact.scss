@@ -15,6 +15,10 @@ body {
 }
 
 .home-navigation {
+  -webkit-animation: menuAppear 1s;
+  -moz-animation: menuAppear 1s;
+  -ms-animation: menuAppear 1s;
+  -o-animation: menuAppear 1s;        
   animation: menuAppear 1s;
 
 }
@@ -22,6 +26,10 @@ body {
 
 .contact-section {
   margin: 180px auto 0px auto;
+  -webkit-animation: contactAppear 1.5s;
+  -moz-animation: contactAppear 1.5s;
+  -ms-animation: contactAppear 1.5s;
+  -o-animation: contactAppear 1.5s;        
   animation: contactAppear 1.5s;
 
   h2 {
@@ -121,6 +129,10 @@ body {
 
         #success, #failure {
           display: none;
+          -webkit-animation: formFeedbackAppear 1s;
+          -moz-animation: formFeedbackAppear 1s;
+          -ms-animation: formFeedbackAppear 1s;
+          -o-animation: formFeedbackAppear 1s;                
           animation: formFeedbackAppear 1s;
         }
       }

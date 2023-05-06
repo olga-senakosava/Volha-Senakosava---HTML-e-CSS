@@ -17,6 +17,10 @@ body {
 }
 
 .home-navigation {
+  -webkit-animation: menuAppear 0.5s;
+  -moz-animation: menuAppear 0.5s;
+  -ms-animation: menuAppear 0.5s;
+  -o-animation: menuAppear 0.5s;        
   animation: menuAppear 0.5s;
 }
 
@@ -28,6 +32,10 @@ body {
   h2 {
     font-size: 70px;
     text-align: center;
+    -webkit-animation: pItemTitleAppear 0.5s;
+    -moz-animation: pItemTitleAppear 0.5s;
+    -ms-animation: pItemTitleAppear 0.5s;
+    -o-animation: pItemTitleAppear 0.5s;        
     animation: pItemTitleAppear 0.5s;
   }
 
@@ -66,14 +74,26 @@ body {
       }
 
       .what-site-div {
+        -webkit-animation: itemDivAppear 0.5s;
+        -moz-animation: itemDivAppear 0.5s;
+        -ms-animation: itemDivAppear 0.5s;
+        -o-animation: itemDivAppear 0.5s;            
         animation: itemDivAppear 0.5s;
       }
 
       .tools-div {
+        -webkit-animation: itemDivAppear 1s;
+        -moz-animation: itemDivAppear 1s;
+        -ms-animation: itemDivAppear 1s;
+        -o-animation: itemDivAppear 1s;            
         animation: itemDivAppear 1s;
       }
 
       .portfolio-item-button {
+        -webkit-animation: itemDivAppear 1.5s;
+        -moz-animation: itemDivAppear 1.5s;
+        -ms-animation: itemDivAppear 1.5s;
+        -o-animation: itemDivAppear 1.5s;            
         animation: itemDivAppear 1.5s;
 
         button {
@@ -127,17 +147,29 @@ body {
     }
 
     .arrow-move-1 {
+      -webkit-animation: arrowMove 1s infinite;
+      -moz-animation: arrowMove 1s infinite;
+      -ms-animation: arrowMove 1s infinite;
+      -o-animation: arrowMove 1s infinite;          
       animation: arrowMove 1s infinite;
     }
 
     .arrow-move-2 {
       margin-top: -15px;
+      -webkit-animation: arrowMove 1s infinite;
+      -moz-animation: arrowMove 1s infinite;
+      -ms-animation: arrowMove 1s infinite;
+      -o-animation: arrowMove 1s infinite;          
       animation: arrowMove 1s infinite;
       animation-delay: 0.1s;
     }
 
     .arrow-move-3 {
       margin-top: -15px;
+      -webkit-animation: arrowMove 1s infinite;
+      -moz-animation: arrowMove 1s infinite;
+      -ms-animation: arrowMove 1s infinite;
+      -o-animation: arrowMove 1s infinite;          
       animation: arrowMove 1s infinite;
       animation-delay: 0.2s;
 
