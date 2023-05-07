@@ -679,10 +679,6 @@ body {
 .home-content .portfolio-container .slide {
   display: inline-block;
   white-space: nowrap;
-  -webkit-animation: slideMove 10s linear infinite;
-  -moz-animation: slideMove 10s linear infinite;
-  -ms-animation: slideMove 10s linear infinite;
-  -o-animation: slideMove 10s linear infinite;
   animation: slideMove 10s linear infinite;
 }
 .home-content .home-intro {
