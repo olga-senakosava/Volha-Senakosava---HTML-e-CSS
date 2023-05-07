@@ -677,9 +677,13 @@ body {
   text-decoration: none;
 }
 .home-content .portfolio-container .slide {
+  -webkit-animation: slideMove 10s linear infinite !important;
+  -moz-animation: slideMove 10s linear infinite !important;
+  -ms-animation: slideMove 10s linear infinite !important;
+  -o-animation: slideMove 10s linear infinite !important;
+  animation: slideMove 10s linear infinite !important;
   display: inline-block;
   white-space: nowrap;
-  animation: slideMove 10s linear infinite;
 }
 .home-content .home-intro {
   position: fixed;

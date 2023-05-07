@@ -266,13 +266,13 @@ body {
     }
 
     .slide {
+      -webkit-animation: slideMove 10s linear infinite!important;
+      -moz-animation: slideMove 10s linear infinite!important;
+      -ms-animation: slideMove 10s linear infinite!important;
+      -o-animation: slideMove 10s linear infinite!important;
+      animation: slideMove 10s linear infinite!important;
       display: inline-block;
       white-space: nowrap;
-      // -webkit-animation: slideMove 10s linear infinite;
-      // -moz-animation: slideMove 10s linear infinite;
-      // -ms-animation: slideMove 10s linear infinite;
-      // -o-animation: slideMove 10s linear infinite;
-      animation: slideMove 10s linear infinite;
     }
   }
 
