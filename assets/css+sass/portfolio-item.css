@@ -15,7 +15,7 @@
     margin-top: 0;
   }
 }
-@keyframes slide1Appear {
+@keyframes slideAppear {
   0% {
     opacity: 0;
     margin-left: -1100px;
@@ -25,7 +25,7 @@
     margin-left: 0px;
   }
 }
-@keyframes slide1Move {
+@keyframes slideMove {
   0% {
     transform: translateX(0%);
   }

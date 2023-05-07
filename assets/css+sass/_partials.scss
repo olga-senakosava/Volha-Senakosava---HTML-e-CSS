@@ -24,7 +24,7 @@ $beige: #EFD6AC;
 }
 
 
-@keyframes slide1Appear {
+@keyframes slideAppear {
   0% {
     opacity: 0;
     margin-left: -1100px;
@@ -41,10 +41,14 @@ $beige: #EFD6AC;
 
 
 
-@keyframes slide1Move {
+@keyframes slideMove {
   
+  0% {
+    transform: translateX(0%);
+  }
+
   100% {
-    transform: translateX(-150%);
+    transform: translateX(-50%);
   }
 }
 
