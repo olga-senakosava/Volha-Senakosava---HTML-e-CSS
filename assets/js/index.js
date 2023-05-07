@@ -33,7 +33,7 @@ window.onload = function () {
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
-        emailjs.sendForm('gmailOlga', 'defaultTemplate', this)
+        emailjs.sendForm('sendMailToOlga', 'defaultTemplate', this)
           .then(function () {
             document.getElementById('success').style.display = "block";
           }, function (error) {
