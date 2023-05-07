@@ -28,6 +28,8 @@ window.onload = function () {
 
   try {
     if(document.getElementById('contact-form')) {
+      document.getElementById('contact-form').reset();
+
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         // generate a five digit number for the contact_number variable
@@ -36,6 +38,7 @@ window.onload = function () {
         emailjs.sendForm('gmailOlga', 'defaultTemplate', this)
           .then(function () {
             document.getElementById('success').style.display = "block";
+            document.getElementById('contact-form').reset();
           }, function (error) {
             console.log(error);
             document.getElementById('failure').style.display = "block";
